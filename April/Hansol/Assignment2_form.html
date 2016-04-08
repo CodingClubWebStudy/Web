@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<form width=700 name="registration_form" action="MAILTO:jongbok.byun@gmail.com" method="post">
+		<fieldset width="100">
+			<ul id="personal" type="none">
+				<li>
+					<label for="first_name">성</label>
+					<input type="text" id="first_name" name="first_name" size="30">
+				</li>
+				<li>
+					<label for="last_name">이름</label>
+					<input type="text" id="last_name" name="last_name" size="30">
+				</li>
+
+				<li>
+					<label for="email_address">이메일 주소</label>
+					<input type="email" id="email_address" name="email_address" size="30">
+				</li>
+
+				<li>
+					<label for="phone_number">전화번호</label>
+					<input type="tel" id="phone_number" name="phone_number" size="30">
+				</li>
+
+				<li>
+					<label for="grade">학년
+					<select name="grade">
+						<option value="--">--</option>
+						<option value="freshman">freshman</option>
+						<option value="sophomore">sophomore</option>
+						<option value="junior">junior</option>
+						<option value="senior">senior</option>
+					</select>
+					</label>
+				</li>
+				<li>
+					성별:
+					<label for="gender_f">여자</label>
+					<input type="radio" name="gender_f" value="1">
+					<label for="gender_m">남자</label>
+					<input type="radio" name="gender_m" value="2">
+				</li>
+				<li>
+					<label for="free">웹 스터디에 바라는 점</label>
+					<textarea name="free" placeholder="500자 이상" rows="5" cols="250"></textarea>
+				</li>
+			</ul>
+		</fieldset>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
