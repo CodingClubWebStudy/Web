@@ -2,11 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>Registration Form</title>
 </head>
 <body>
-	<h2>Registration Form</h2>
+	<h1>Registration Form</h1>
 	<form width=700 name="registration_form" action="MAILTO:jongbok.byun@gmail.com" method="post">
+	<!--post:신상정보 보낼때 많이 보냄!! body가 있음-->
 		<fieldset width="100">
+			<legend>Registration Form</legend>
+			<!--
+			legend:시각장애인들한테 화면 읽어주는 기계가 table의 이름을 읽어줌!!
+			field -> legend, table -> summary
+			웹접근성 구축할 때 많이 씀..!
+			-->
 			<ul id="personal" type="none">
 				<li>
 					<label for="first_name">성</label>
@@ -30,7 +38,7 @@
 				<li>
 					<label for="grade">학년
 					<select name="grade">
-						<option value="--">--</option>
+						<option>--</option>
 						<option value="freshman">freshman</option>
 						<option value="sophomore">sophomore</option>
 						<option value="junior">junior</option>
@@ -40,14 +48,14 @@
 				</li>
 				<li>
 					성별:
-					<label for="gender_f">여자</label>
-					<input type="radio" name="gender_f" value="1">
-					<label for="gender_m">남자</label>
-					<input type="radio" name="gender_m" value="2">
+					<label for="female">여자</label>
+					<input type="radio" id="female" name="gender" value="1">
+					<label for="male">남자</label>
+					<input type="radio" id="male" name="gender" value="2">
 				</li>
 				<li>
 					<label for="free">웹 스터디에 바라는 점</label>
-					<textarea name="free" placeholder="500자 이상" rows="5" cols="250"></textarea>
+					<textarea name="free" placeholder="500자 이상" rows="5" cols="100"></textarea>
 				</li>
 			</ul>
 		</fieldset>
