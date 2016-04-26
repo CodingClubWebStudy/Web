@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="uft-8">
+        <!-- <script src ="style.css"></script> -->
+    <title>CMS_Report</title>
+    </head>
+    
+    <body>
+    <h1><a title = "Return to index" href = "CMS_index.html">CodingClub 2 team MooseonChoi</a></h1>
+    <hr>
+    <h1>Registration Form</h1>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>정보 입력</legend><p>
+            &nbsp;&nbsp;&nbsp;&nbsp;성 : <input type = "text" name "lastName"></input><p>
+            &nbsp;&nbsp;&nbsp;&nbsp;이름 : <input type = "text" name "firstName"></input><p>
+            &nbsp;&nbsp;&nbsp;&nbsp;이메일 : <input type = "text" name "email1"></input> 
+            @
+            <select name="email2" size="1">
+            <option value="emailnone"> ----------- </ option>
+            <option value="hanmail.net"> hanmail.net</ option>
+            <option value="naver.com"> naver.com</ option>
+            <option value="gmail.com"> gmail.com</ option></select><p> 
+            &nbsp;&nbsp;&nbsp;&nbsp;전화번호 : <input type = "text" name "phoneNumber"></input><p>
+            &nbsp;&nbsp;&nbsp;&nbsp;최종학력 : <select name ="combo" size = "1">
+                <option value="gradenone" selected=> ------------ </option>
+                <option value="mid_ing">중학교 재학</option>
+                <option value="mid_ed">중학교 졸업</option>
+                <option value="high_ing">고등학교 재학</option>
+                <option value="high_ed">고등학교 졸업</option>
+                <option value="univ_ing">대학교 재학</option>
+                <option value="univ_ed">대학교 졸업</option>
+                <option value="grad_mas_ing">대학원(석) 재학</option>
+                <option value="grad_mas_ed">대학원(석) 졸업</option>
+                </select><p>
+            &nbsp;&nbsp;&nbsp;&nbsp;성별 : &nbsp;<input type = "radio" name "sex" value="man">남</input>&nbsp;&nbsp;
+            <input type = "radio" name "sex" value="woman">여</input><p>
+            
+            웹스터디에 바라는 점
+                <TEXTAREA name "wishtalk" cols="250" rows = "10" style = color:gray>500자 이상</TEXTAREA>
+        </fieldset>
+        <input type="submit" value="submit" ></input>
+    </form>
+    </body>
+</html>
