@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>코딩클럽 가입</title>
+	<style type="text/css">
+		#registration_form li {
+			margin:10px; list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<h1> Registration Form</h1>
+	<form id="registration_form">
+	<fieldset>
+		<legend>등록 폼</legend>
+		<ul>
+      		<li>
+	        	<label for="last_name">성</label>
+	        	<input type="text" name="last_name" id="name" value="" />
+      		</li>
+      		<li>
+	        	<label for="first_name">이름</label>
+	        	<input type="text" name="first_name" id="first_name" value="" />
+      		</li>
+      		<li>
+	        	<label for="email">이메일 주소</label>
+	        	<input type="text" name="email" id="email" value=""/>
+        	</li>
+        	<li>
+	        	<label for="phone_number">전화번호</label>
+	        	<input name="phone_number" id="phone_number" value=""/>
+      		</li>
+      		<li>
+	        	<label for="grade">학년</label>
+	        	<select name="grade">
+	        		<option value="none">학년을 선택하세요</option>
+	        		<option value="freshman">1학년</option>
+	        		<option value="sophomore">2학년</option>
+	        		<option value="junior">3학년</option>
+	        		<option value="senior">4학년</option>
+	        	</select>
+      		</li>
+      		<li>
+      			<label for="gender">성별</label>
+      			<input type="radio" name="gender" value="male">남자</input>
+      			<input type="radio" name="gender" value="female">여자</input>
+      		</li>
+      		<li>
+      			<label for="wish">웹스터디에 바라는점</label>
+      			<br>
+      			<textarea rows="5" cols="80" placeholder="500자 이상 써주세요."></textarea>
+      		</li>
+      		<li>
+      			<input type="submit" value="submit"></input>
+      		</li>
+      	</ul>
+      	</fieldset>
+	</form>
+</body>
+</html>
