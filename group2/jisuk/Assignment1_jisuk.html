@@ -1,18 +1,50 @@
-<html lang="en"><head>
+<html lang="en">
+  
+  <!-- head
+    meta tag 설정
+    웹 타이틀 설정
+    자바스크립 혹은 스타일 시트 로딩 
+  -->
+  <head>
+    <!-- utf-8로 설정을 하면 한글이 깨지지 않고 나옴 -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="codingclub-web-study">
     <meta name="author" content="Jay Yoon">
 
+    <!-- head에 있는 title은 웹 상단 브라우저 바에 나옴 -->
     <title>Hello Jisuk Yoon</title>
-   
+    
+    <!-- embedded style sheet -->
+    <style>
+      h1 {
+        color:#000000;
+      }
+      p {
+        color:blue;
+      }
+      /* css class, 여러 곳에서 동시에 적용 */
+      .inner-wrapper{
+        padding:10px;
+      }
+      /* css id, 한페이지에 하나 */
+      #buttonClick{
+        border:1px solid #eee; 
+        background-color:#eee
+      }
+    </style>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   </head>
 
   <body>  
     <!-- header -->
     <header>
+       <!-- inline style sheet -->
        <div style="width:100%;">
         <h1>자기소개</h1>
        </div>
@@ -22,10 +54,14 @@
     <section>
       <!-- article -->
       <article style="float:left;width:50%;">
-       
-            <img src="./assets/img/Assignemnt1_jisuk_img.jpg" width="300" />
+            <!-- image -->
+            <img src="./assets/img/Assignemnt1_jisuk_img.jpg" width="300" alt="image hover text" title="image not loading text" />
+
+            <!-- css class -->
             <div class="inner-wrapper">
+              <!-- h3 -->
               <h3>인사</h3>
+              <!-- p -->
               <p>
                 안녕하세요, 저는 윤지석 입니다!<br/>
                 만나서 반갑습니다 :)
@@ -44,6 +80,7 @@
             <div class="inner-wrapper">
               <h3>취미</h3>
               <p>
+                <!-- ordered list -->
                 <ol id="favorite-list">
                   <li>배낭여행!!!!!!!!</li>
                   <li>맛있는 맥주 마시기!!</li>
@@ -59,9 +96,10 @@
       <!-- article -->
       <!-- article -->
       <article  style="float:left;width:50%;" >
-      
+            <!-- form -->
             <form>
               성 <br>
+              <!-- input -->
               <input type="text" name="firstname"><br>
               이름 <br>
               <input type="text" name="lastname"><br>
@@ -91,13 +129,25 @@
               <h3>아래 input창에 취미를 입력하고 추가해보세요!!</h3>
               취미 항목 추가하기<br>
               <input type="text" name="favorite" id="favorite">
-              <button id="buttonClick" style="border:1px solid #eee; background-color:#eee">취미 추가</button>
+              <button id="buttonClick" >취미 추가</button>
             </form>
      
       </article>
       <!-- article -->
     </section>
     <!-- section -->
+
+    <div style="clear:both"></div>
+    <!-- footer -->
+    <footer style="text-align:center">
+      <address>코딩클럽</address> &nbsp;
+      <!-- a 링크 태그 -->
+      <a href="https://www.facebook.com/groups/CodingClubKorea/" target="_blank">코딩클럽 페이스북 그룹</a> &nbsp; &nbsp;
+      <a href="https://www.facebook.com/codingclubs/" target="_blank">코딩클럽 페이스북 페이지</a> <br>
+      <span> &copy; 코딩클럽 </span>
+    </footer>
+    <!-- footer -->
+
     <script>
 
       document.getElementById("buttonClick").addEventListener("click", function(event){
