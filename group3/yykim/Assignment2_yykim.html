@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자기소개</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="get"  style="">
+        <fieldset>
+            <p>
+                <label for="id_fname">성
+                    <input id="id_fname" type="text" name="fname">
+                </label>
+            </p>
+            <p>
+                <label for="id_lname">이름
+                    <input id="id_lname" type="text" name="lname">
+                </label>
+            </p>
+            <p>
+                <label for="id_email">이메일 주소
+                    <input id="id_email" type="email" name="email">
+                </label>
+            </p>
+            <p>
+                <label for="id_grade">전화번호
+                    <input id="id_grade" type="tel" name="grade">
+                </label>
+            </p>
+            <p>
+                <label for="id_tel">학년
+                    <select name="tel">
+                        <option value="0" selected>--</option>
+                        <option value="1">1학년</option>
+                        <option value="2">2학년</option>
+                        <option value="3">3학년</option>
+                        <option value="4">4학년</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>성별:
+                    남자 <input type="radio" name="gender" value="male" checked>
+                    여자 <input type="radio" name="gender" value="female">
+                </label>
+            </p>
+            <p>
+                <h4>웹 스터디에 바라는 점</h4>
+                <textarea name="study" rows="8"  cols="80" placeholder="500자이상"></textarea>
+            </p>
+        </fieldset>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
