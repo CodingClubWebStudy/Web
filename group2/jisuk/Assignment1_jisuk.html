@@ -11,78 +11,93 @@
   </head>
 
   <body>  
-    <div style="width:100%;">
-      <h1>자기소개</h1>
-    </div>
-    <div style="float:left;width:50%;" >
-          <img src="./assets/img/Assignemnt1_jisuk_img.jpg" width="300" />
-          <div class="inner-wrapper">
-            <h3>인사</h3>
-            <p>
-              안녕하세요, 저는 윤지석 입니다!<br/>
-              만나서 반갑습니다 :)
-            </p>
-          </div>
+    <!-- header -->
+    <header>
+       <div style="width:100%;">
+        <h1>자기소개</h1>
+       </div>
+    </header>
+    <!-- header -->
+    <!-- section -->
+    <section>
+      <!-- article -->
+      <article style="float:left;width:50%;">
+       
+            <img src="./assets/img/Assignemnt1_jisuk_img.jpg" width="300" />
+            <div class="inner-wrapper">
+              <h3>인사</h3>
+              <p>
+                안녕하세요, 저는 윤지석 입니다!<br/>
+                만나서 반갑습니다 :)
+              </p>
+            </div>
 
-          <div class="inner-wrapper">
-            <p>
-              저는 30살이고, 웹프로그래머로 일을 하고 있습니다.<br/>
-              이제 개발 3년차이고요, 무엇인가 뜻깊은 일을 <br/>
-              해보고 싶었는데, 마침 <b>코딩클럽</b>을 통해 의미 있는<br/>
-              일을 하고 있다고 느껴 요즘 즐겁습니다!
-            </p>
-          </div>
+            <div class="inner-wrapper">
+              <p>
+                저는 30살이고, 웹프로그래머로 일을 하고 있습니다.<br/>
+                이제 개발 3년차이고요, 무엇인가 뜻깊은 일을 <br/>
+                해보고 싶었는데, 마침 <b>코딩클럽</b>을 통해 의미 있는<br/>
+                일을 하고 있다고 느껴 요즘 즐겁습니다!
+              </p>
+            </div>
 
-          <div class="inner-wrapper">
-            <h3>취미</h3>
-            <p>
-              <ol id="favorite-list">
-                <li>배낭여행!!!!!!!!</li>
-                <li>맛있는 맥주 마시기!!</li>
-                <li>운동하기!!</li>
-                <li>바다 구경가기</li>
-                <li>걷기</li>
-                <li>사진찍기</li>
-              </ol>
-            </p>
-          </div>
-    </div>
-    <div style="float:left;width:50%;" >
-          <form>
-            성 <br>
-            <input type="text" name="firstname"><br>
-            이름 <br>
-            <input type="text" name="lastname"><br>
-            메일 <br>
-            <input type="text" name="email"><br>
-            전화 <br>
-            <input type="text" name="phone"><br>
-            나이 <br>
-            <select>
-              <option value="10">10대</option>
-              <option value="20">20대</option>
-              <option value="30">30대</option>
-              <option value="40">40대</option>
-            </select>
-            <br>
-            성별<br>
-              <input type="radio" name="gender" value="male" checked>남자 &nbsp;&nbsp;
-              <input type="radio" name="gender" value="female">여자&nbsp;&nbsp;
-              <input type="radio" name="gender" value="other">그외<br>  
+            <div class="inner-wrapper">
+              <h3>취미</h3>
+              <p>
+                <ol id="favorite-list">
+                  <li>배낭여행!!!!!!!!</li>
+                  <li>맛있는 맥주 마시기!!</li>
+                  <li>운동하기!!</li>
+                  <li>바다 구경가기</li>
+                  <li>걷기</li>
+                  <li>사진찍기</li>
+                </ol>
+              </p>
+            </div>
+      
+      </article>
+      <!-- article -->
+      <!-- article -->
+      <article  style="float:left;width:50%;" >
+      
+            <form>
+              성 <br>
+              <input type="text" name="firstname"><br>
+              이름 <br>
+              <input type="text" name="lastname"><br>
+              메일 <br>
+              <input type="text" name="email"><br>
+              전화 <br>
+              <input type="text" name="phone"><br>
+              나이 <br>
+              <select>
+                <option value="10">10대</option>
+                <option value="20">20대</option>
+                <option value="30">30대</option>
+                <option value="40">40대</option>
+              </select>
+              <br>
+              성별<br>
+                <input type="radio" name="gender" value="male" checked>남자 &nbsp;&nbsp;
+                <input type="radio" name="gender" value="female">여자&nbsp;&nbsp;
+                <input type="radio" name="gender" value="other">그외<br>  
 
-            잡담<br>
-            <textarea rows="4" cols="50">
-            
-            </textarea>
-            <br> <br> <br> <br>
+              잡담<br>
+              <textarea rows="4" cols="50">
+              
+              </textarea>
+              <br> <br> <br> <br>
 
-            <h3>아래 input창에 취미를 입력하고 추가해보세요!!</h3>
-            취미 항목 추가하기<br>
-            <input type="text" name="favorite" id="favorite">
-            <button id="buttonClick" style="border:1px solid #eee; background-color:#eee">취미 추가</button>
-          </form>
-    </div>
-
+              <h3>아래 input창에 취미를 입력하고 추가해보세요!!</h3>
+              취미 항목 추가하기<br>
+              <input type="text" name="favorite" id="favorite">
+              <button id="buttonClick" style="border:1px solid #eee; background-color:#eee">취미 추가</button>
+            </form>
+     
+      </article>
+      <!-- article -->
+    </section>
+    <!-- section -->
     <script>
 
       document.getElementById("buttonClick").addEventListener("click", function(event){
