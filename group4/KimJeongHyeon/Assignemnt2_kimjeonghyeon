@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Assignemnt 2</title>
+</head>
+<body>
+  <h1>등록</h1>
+  <fieldset>
+     <div><label for="firstname">성 <input id="firstname" type="text"></label></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+
+  </fieldset>
+</body>
+</html>
