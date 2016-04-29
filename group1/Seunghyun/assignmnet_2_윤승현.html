@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Assignment2_회원가입</title>
+  <meta name="author" content="Seunghyun_Yoon">
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }</style>
+    <table style="width:50%">
+      <tr><td>
+      <form class="" action="http://localhost/admin.php">
+        <p>성 : <input type="text" name="name" value=""></p>
+        <p>이름 : <input type="text" name="name" value=""></p>
+        <p>이메일 주소 : <input type="text" name="name" value=""></p>
+        <p>전화번호 : <input type="text" name="name" value=""></p>
+        <p>학년 :
+          <select name="학년">
+          <option value="NA">------</option>
+          <option value="0">1학년</option>
+          <option value="1">2학년</option>
+          <option value="2">3학년</option>
+          <option value="3">4학년</option>
+        </select>
+        </p>
+        <p>성별 :
+          <input type="radio" name="성별" value="0" checked="checked">남자
+          <input type="radio" name="성별" value="1">여자
+        </p>
+        웹 스터디에 바라는 점
+        <textarea name="comment" rows="8" cols="105" placeholder="500자 이상"></textarea>
+      </td></tr>
+    </table>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>
