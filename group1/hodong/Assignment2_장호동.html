@@ -1,35 +1,35 @@
 <html lang = "ko">
-    <head>
-        <meta charset = "utf-8">
-        <title>Registation Form</title>
-    </head>
-    <body>
-        <div id = "register_form">
-            <form action="#">
-                <p>성 : <input type = "text" name = "firstName"  placeholder = "장" required></p>
+<head>
+    <meta charset = "utf-8">
+    <title>Registation Form</title>
+</head>
+<body>
+    <div id = "register_form">
+        <form action="#">
+            <labe>성 : </label>
+                <input type = "text" name = "firstName"  placeholder = "장" required /><!--placeholder : ie X -> jquery로 만들어주는 방식으로도 처리 해줍니다-->
                 <p>이름 : <input type = "text" name = "lastName"  placeholder = "호동" required></p>
                 <p>이메일 주소 : <input type = "email" name = "email"  placeholder = "arshavin3@naver.com" required></p>
                 <p>전화번호 : <input type = "text" name = "phoneNumber" placeholder = "010-4429-9557" required></p>
                 <p>
-                        학년 <select name = "grade" id = "grade" required>
-                            <option value="volvo">1학년</option>
-                            <option value="saab">2학년</option>
-                            <option value="mercedes">3학년</option>
-                            <option value="audi">4학년</option>
-                        </select>
-                </p>
-                <p>
-                    성별
-                        <label for = "male">남 </label><input type="radio" name="gender" value="male" id = "male" checked>
-                        <label for = "female">여 </label><input type="radio" name="gender" value="female" id = "female">
-                </p>
-                <p>
-                    <p>웹 스터디에 바라는 점</p>
-                    <textarea rows = "4" cols = "50">
-                        
-                    </textarea>
-                </p>
-            </form>
-        </div>
-    </body>
+                    학년 <select name = "grade" id = "grade" required>
+                    <option value="volvo">1학년</option>
+                    <option value="saab">2학년</option>
+                    <option value="mercedes">3학년</option>
+                    <option value="audi">4학년</option>
+                </select>
+            </p>
+            <p>
+                성별
+                <label for = "male">남 </label><input type="radio" name="gender" value="male" id = "male" checked>
+                <label for = "female">여 </label><input type="radio" name="gender" value="female" id = "female">
+            </p>
+            <!-- 태그 -> 블럭 (줄바꿈) / 인라인 -->
+            <p>웹 스터디에 바라는 점</p>
+            <textarea rows = "4" cols = "50">
+
+            </textarea>
+        </form>
+    </div>
+</body>
 </html>

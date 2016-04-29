@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>코딩클럽 가입</title>
+	<meta charset="UTF-8">
 	<style type="text/css">
 		#registration_form li {
 			margin:10px; list-style: none;
@@ -17,7 +17,7 @@
 		<ul>
       		<li>
 	        	<label for="last_name">성</label>
-	        	<input type="text" name="last_name" id="name" value="" />
+	        	<input type="text" name="last_name" id="last_name" value="" />
       		</li>
       		<li>
 	        	<label for="first_name">이름</label>
@@ -42,14 +42,14 @@
 	        	</select>
       		</li>
       		<li>
-      			<label for="gender">성별</label>
-      			<input type="radio" name="gender" value="male">남자</input>
-      			<input type="radio" name="gender" value="female">여자</input>
+      			성별
+      			<input type="radio" name="gender" id="male" value="male" /><label for="male">남자</label>
+      			<input type="radio" name="gender" id="female" value="female"><label for="female">여자</label>
       		</li>
       		<li>
       			<label for="wish">웹스터디에 바라는점</label>
       			<br>
-      			<textarea rows="5" cols="80" placeholder="500자 이상 써주세요."></textarea>
+      			<textarea rows="5" cols="80" name="wish" placeholder="500자 이상 써주세요."></textarea>
       		</li>
       		<li>
       			<input type="submit" value="submit"></input>

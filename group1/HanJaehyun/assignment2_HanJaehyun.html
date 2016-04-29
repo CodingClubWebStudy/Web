@@ -16,47 +16,43 @@
 </head>
 <body>
     <form action="#">
-    <label for="familyName">성</label><input type="text" id="familyName">
-    <label for="name">이름</label><input type="text" id="name">
-    <label for="email">메일주소</label><input type="text" id="email"> @ 
-    <select name="mail">
-        <option value="naver">naver.com</option>
-        <option value="gmail">gmail.com</option>
-        <option value="daum">daum.com</option>
-    </select>
-    
-    <label for="phoneNum">전화번호</label>
-    <select>
-        <option value="010">010</option>
-        <option value="011">011</option>
-        <option value="016">016</option>
-    </select> - 
-    <input type="text" id="phoneNum"> -
-    <input type="text" id="phoneNum">
-    
-    <div>
-    <label for="man">남자</label><input type="radio" name="gender" value="man" id="man" checked>
-    <label for="woman">여자</label><input type="radio" name="gender" value="woman" id="woman">
-    <label for="other">기타</label><input type="radio" name="gender" value="other" id="other">
-    </div>
-    
-    <label>직업</label>
-    <select>
-        <option value="student">학생</option>
-        <option value="worker">직장인</option>
-        <option value="jobless_soil">백수(흙수저)</option>
-        <option value="jobless_gold">백수(금수저)</option>
-    </select>
-    
-    <label>알게된 경로</label>
-    <div>
-    <label for="mom">엄마</label><input type="checkbox" name="mom" value="mom" id="mom">
-    <label for="dad">아빠</label><input type="checkbox" name="dad" value="dad" id="dad">
-    <label for="friend">친구</label><input type="checkbox" name="friend" value="friend" id="friend">
-    </div>
-    
-    <label for="">하고 싶은말</label>
-    <textarea cols="30" rows="10">잘 부탁 드립니다.....</textarea>
+        <label for="familyName">성</label>
+        <input type="text" id="familyName" name="#">
+        <label for="name">이름</label>
+        <input type="text" id="name">
+        <label for="email">메일주소</label>
+        <input type="email" id="email" />
+        <label for="phoneNum">전화번호</label>
+        <select>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+        </select> - 
+        <input type="text" id="phoneNum"> -
+        <input type="text" id="phoneNum">
+        <div>
+            <label for="man">남자</label><input type="radio" name="gender" value="man" id="man" checked>
+            <label for="woman">여자</label><input type="radio" name="gender" value="woman" id="woman">
+            <label for="other">기타</label><input type="radio" name="gender" value="other" id="other">
+        </div>
+
+        <label>직업</label>
+        <select name="job">
+            <option value="student">학생</option>
+            <option value="worker">직장인</option>
+            <option value="jobless_soil">백수(흙수저)</option>
+            <option value="jobless_gold">백수(금수저)</option>
+        </select>
+
+        <label>알게된 경로</label>
+        <div>
+            <label for="mom">엄마</label><input type="checkbox" name="mom" value="mom" id="mom">
+            <label for="dad">아빠</label><input type="checkbox" name="dad" value="dad" id="dad">
+            <label for="friend">친구</label><input type="checkbox" name="friend" value="friend" id="friend">
+        </div>
+
+        <label for="">하고 싶은말</label>
+        <textarea cols="30" rows="10">잘 부탁 드립니다.....</textarea>
     </form>
 </body>
 </html>

@@ -1,46 +1,53 @@
 ﻿<!DOCTYPE html>
-	<head>
-		<title>HTML First Week</title>
-		<style type="text/css">
-		.box{border: 2px solid; padding: 10px;width:400px;height:320px;text-align: left;}
+<html lang="ko">
+<head>
+	<title>HTML First Week</title>
+	<style type="text/css">
+		.box{border: 2px solid; padding: 10px;width:400px;height:400px;text-align: left;}
 		#button{text-align:center;}
-		</style>
-	</head>
-	<body>
-		<p><h2><b>**Registration Form</b></h2></p>
-		<div class="box">
+	</style>
+</head>
+<body>
+	<h2><strong>**Registration Form</strong></h2>
+	<div class="box">
 		<form action="">
-			<p>성:    <input type="text" id="fname">&nbsp&nbsp이름:   <input type ="text" id="name"></p>
+			<label>성:</label>
+			<input type="text" id="fname" name=""><br/>
+			<label>이름:</label><input type ="text" id="name">
 			<p>이메일: <input type="text" id="email1"style="width:144px;">&nbsp@&nbsp
-					<input type="text" id="email2"style="width:144px;">
+				<input type="text" id="email2"style="width:144px;">
 			</p>
 			<p>전화번호: <select name="num" id="num1" style="width: 50px;">
-							<option value="010">010</option>
-							<option value="011">011</option>
-							<option value="016">016</option>
-						</select>
-				&nbsp-&nbsp
-				<input type ="text" id="num2"style="width:103px;">
-				&nbsp-&nbsp
-				<input type ="text" id="num3"style="width:103px;">
-			</p>
-			<p><label for="job">직업: </label><input type="radio" name="job" value="student" id="job"> 학생<input type="radio" name="job" value="normal" id="job"> 일반
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+			</select>
+			&nbsp-&nbsp
+			<input type ="text" id="num2" style="width:103px;">
+			&nbsp-&nbsp
+			<input type ="text" id="num3" style="width:103px;">
+		</p>
+		<p><label for="job">직업: </label><input type="radio" name="job" value="student" id="job"> 학생<input type="radio" name="job" value="normal" id="job"> 일반</p>
+		<p>
 			학년: <select name ="grade">
-						<option value="none" >--------</option>
-						<option value="first">1학년</option>
-						<option value="second">2학년</option>
-						<option value="third">3학년</option>
-						<option value="fourth">4학년</option>
-					</select>
-			</p>
-			<p><label for="gender" >성별: </label>남<input type="radio"name ="gender"value="man"id="gender"checked> 여<input type="radio"name="gender"value="woman"id="gender">
-			</p>
-			<p>자기 소개 한마디:<br><br>
-				<textarea cols="45" rows"3">간단한 자기소개 부탁합니다:)</textarea>
-			</p>
-		<div id="button"><input type ="submit" value="제출" text-align="center"></div><br><br>
-		</form>
-		</div>
-	</body>
+			<option value="none" >--------</option>
+			<option value="first">1학년</option>
+			<option value="second">2학년</option>
+			<option value="third">3학년</option>
+			<option value="fourth">4학년</option>
+		</select>
+	</p>
+	<p>성별: 
+	<label for="man" >남</label>
+	<input type="radio" name ="gender" value="man" id="man" checked>
+	<label for="woman">여</label>
+	<input type="radio" name="gender" value="woman" id="woman">
+	</p>
+	<p>자기 소개 한마디:<br><br>
+		<textarea cols="45" rows"3" placeholder="간단한 자기소개 부탁합니다:)"></textarea>
+	</p>
+	<div id="button"><input type ="submit" value="제출" text-align="center"></div><br><br><!--text-align : 텍스트 정렬-->
+</form>
+</div>
+</body>
 </html>
