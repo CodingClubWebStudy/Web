@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style type="text/css">
+#tble {
+	font-size: 130%;
+}
+
+#first {
+	background-color: #99ffcc;
+}
+
+#second {
+	background-color: #ffb3b3;
+}
+
+#third {
+	background-color: #b3d9ff;
+}
+
+h3 {
+	background-color: #ffffcc;
+}
+
+#pic {
+	background-color: #ffff66;
+}
+</style>
+
+<meta charset="euc-kr">
+<!--euc-kr OR utf-8 -->
+<meta name="description"
+	content="프론트엔드 개발자를 위한 북마크, Front-End-Developer for Bookmarks" />
+<meta name="keywords" content="프론트엔드 개발자, 북마크, 즐겨찾기,웹접" />
+<title>코딩클럽 1주차 발제자 3조 Kyu 북마크</title>
+</head>
+<body>
+
+	<div class="row-fluid">
+		<h1>코딩클럽 1주차 발제자 3조 Kyu 북마크</h1>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span6">
+					<h3>주제: 시맨틱태그(Semantic MarkUp)</h3>
+				</div>
+			</div>
+		</div>
+		<div class="span4">웹</div>
+		<div class="span7">스</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span4 offset3">터</div>
+		<div class="span3 offset2">디</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span4">금</div>
+		<div class="span5 offset3">욜</div>
+	</div>
+	<hr />
+
+	<nav>
+		<a href="#target6"> 북마크(음악, 참고사이트)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+			href="#target7"> study on HTMLby opentutorials.org</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</nav>
+	<hr />
+	
+	<div class="continer-fluid">
+		<div class="row-fluid">
+			<div class="span6">
+				<p id="first">HyperText Markup Language, co mmonly referred to
+					as HTML, is the standard markup language used to create web pages.
+					Along with CSS, and JavaScript, HTML is a cornerstone technology,
+					used by most websites to create visually engaging webpages, user
+					interfaces for web applications, and user interfaces for many
+					mobile applications.[1] Web browsers can read HTML files and render
+					them into visible or audible web pages. HTML describes the
+					structure of a website semantically along with cues for
+					presentation, making it a markup language, rather than a
+					programming language.</p>
+			</div>
+			<div class="span6">
+				<p>보통 HTML이라고 불리는 Hyper Text Markup Language로 웹페이지를 만드는데 사용되는 표준
+					마크업 언어이다. 이러한 HTML은 CSS, JavaScript와 함께 웹 페이지, 웹 애플리케이션 사용자 인터페이스,
+					수 많은 모바일 애플리케이션 사용자 인터페이스를 시각적으로 구성하는데 있어 대부분의사이트들에 사용되는 주춧돌 역할을 하는
+					표준 언어 이다.</p>
+			</div>
+		</div>
+	</div>
+	<br />
+	<hr />
+
+	<div class="continer-fluid">
+		<div class="row-fluid">
+			<div class="span6"></div>
+			<div class="span6">
+				<p id="second">HTML elements form the building blocks of all
+					websites. HTML allows images and objects to be embedded and can be
+					used to create interactive forms. It provides a means to create
+					structured documents by denoting structural semantics for text such
+					as headings, paragraphs, lists, links, quotes and other items.</p>
+			</div>
+		</div>
+	</div>
+	<br />
+	<hr />
+
+	<div class="continer-fluid">
+		<div class="row-fluid">
+			<div class="span6">
+				<p id="third">The language is written in the form of HTML
+					elements consisting of tags enclosed in angle brackets (like
+					"html>"). Browsers do not display the HTML tags and scripts, but
+					use them to interpret the content of the page. HTML can embed
+					scripts written in languages such as JavaScript which affect the
+					behavior of HTML web pages. Web browsers can also refer to
+					Cascading Style Sheets (CSS) to define the look and layout of text
+					and other material. The World Wide Web Consortium (W3C), maintainer
+					of both the HTML and the CSS standards, has encouraged the use of
+					CSS over explicit presentational HTML since 1997.[2]</p>
+			</div>
+			<div class="span6"></div>
+		</div>
+	</div>
+	<hr />
+
+<figure>
+<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span4">
+				<!--Sidebar content-->
+				<a href ="https://www.facebook.com/groups/CodingClubKorea/" >
+				<img src="img/cocl2.jpg" width="500" height="500" alt="웹스터디오리엔테이션2"
+					title="좋아요">
+				</a>
+			</div>
+			<div class="span4">
+				<a href ="https://www.facebook.com/groups/CodingClubKorea/" >
+				<img src="img/cocle.jpg" width="500" height="500" alt="웹스터디오리엔테이션1"
+					title="좋아요">
+			</div>
+			<div class="span4">
+				<a href ="https://www.facebook.com/groups/CodingClubKorea/" >
+				<img src="img/cocl3.jpg" width="500" height="500" alt="웹스터디오리엔테이션3"
+					title="좋아요">
+			</div>
+		</div>
+	</div>
+</figure>
+	<hr />	
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span6">
+				<!--Sidebar content-->
+				<img src="img/cocl1.jpg" width="400" height="400" alt="웹스터디오리엔테이션"
+					title="좋아요">
+			</div>
+			<div class="span6">
+				<!--Body content-->
+				<table id="tble" name="tble">
+					<thead>
+						<tr>
+							<th>그룹</th>
+							<th>이름</th>
+							<th>짝꿍</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>3</td>
+							<td>김승화</td>
+							<td>이예지</td>
+							<br />
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>정가영</td>
+							<td>박철홍</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>김용열</td>
+							<td>김지윤</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>임향란</td>
+							<td>홍민선</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">3그룹은 총 8명입니다.</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span4">
+				<!--Sidebar content-->
+				<a name="target6">북마크(음악, 참고사이트)</a>
+			</div>
+			<div class="span8">
+				<!--Body content-->
+				<ul>
+					<li><a
+						href="http://blog.singihae.com/html5-%ec%8b%9c%eb%a7%a8%ed%8b%b1semantic-%eb%a7%88%ed%81%ac%ec%97%85"
+						target="blank">시맨틱태그1</a></li>
+					<li><a
+						href="http://gc8134.tistory.com/entry/HTML5%EC%9D%98-%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8Semantic-tag%EA%B0%80-%EA%B0%80%EC%A7%80%EB%8A%94-%EC%9D%98%EB%AF%B8"
+						target="blank">시맨틱태그2</a></li>
+					<li><a href="http://blog.naver.com/success87pch">첫 번째
+							블로그(현재 페이지에서 이동) </a></li>
+					<li><a href="http://blog.naver.com/success87pmg"
+						target="blank"> 두 번째 블로그</a></li>
+					<li><a href="https://www.facebook.com/groups/CodingClubKorea/"
+						target="blank">코딩클럽</a></li>
+					<li><a href="https://www.youtube.com/watch?v=TcytstV1_XE"
+						target="blank">크러쉬 - 나를 잊어버리지마(feat.TaeYoen)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=UsaJsymfuWU"
+						target="blank">지코(ZICO) - Boys And Girls (Feat. Babylon) MV</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr />
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span4">
+				<!--Sidebar content-->
+				<a name="target7"><h6>study on HTMLby opentutorials.org</h6></a>
+			</div>
+			<div class="span4">
+				<!--Body1 content-->
+				<ol>
+					<li><a href="http://blog.naver.com/success87pch/220606064623"
+						target="blank"> HTML 기술 소개 및 문법 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220606109202"
+						target="blank"> 하이퍼텍스트와 속성 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220606137213"
+						target="blank"> 태그의 중첩과 목록 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220606157778"
+						target="blank"> 문서의 구조 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220606423697"
+						target="blank"> DOCTYPE </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220607010141"
+						target="blank"> 웹사이트 만들기 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220607040712"
+						target="blank"> 개발도구 (atom) </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220607087153"
+						target="blank"> HTML 변천사와 통계 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608202254"
+						target="blank"> p 태그 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608211995"
+						target="blank"> br 태그 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608244113"
+						target="blank"> img 태그 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608769500"
+						target="blank"> 테이블 관련 태그 No.1 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608770782"
+						target="blank"> 테이블 관련 태그 No.2 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608772313"
+						target="blank"> 테이블 관련 태그 No.3 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608788554"
+						target="blank"> form 태그 No.1 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608836090"
+						target="blank"> form 태그 No.2 </a></li>
+				</ol>
+			</div>
+			<div class="span4">
+				<!--Body2 content-->
+				<ol>
+					<li><a href="http://blog.naver.com/success87pch/220609088580"
+						target="blank"> slect 태그 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220608788554"
+						target="blank">radio, checkbox 태그 (input 태그 사용) </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220609198499"
+						target="blank">버튼 생성하기 </a></li>
+					<li><a href="http://blog.naver.com/success87pch/220609231250"
+						target="blank">hidden field (UI가 없지만 서버로 어떠한 값을 전송하고 싶을 경우) </a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

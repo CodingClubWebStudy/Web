@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+
+	<form action="JoinOk" method="post">
+		이름 : <input type="text" name="name" size="10"><br />
+		아이디 : <input type="text" name="id" size="10"><br />
+		비밀번호 : <input type="password" name="pw" size="10"><br />
+		전화번호 : <select name="phone1">
+			<option value="010">010</option>
+			<option value="016">016</option>
+			<option value="017">017</option>
+			<option value="018">018</option>
+			<option value="019">019</option>
+			<option value="011">011</option>
+		</select> -
+		<input type="text" name="phone2" size="5"> - <input type="text" name="phone3" size="5"> <br />
+		성별구분 : <input type="radio" name="gender" value="man">남 &nbsp;<input type="radio" name="gender" value="woman">여 <br />
+		취미:
+		축구 <input type = "checkbox" name = "hobbies" value ="축구"  />
+		야구 <input type = "checkbox" name = "hobbies" value ="야구"  />
+		농구 <input type = "checkbox" name = "hobbies" value ="농구"  /><br/><br/>
+		코멘트:
+<textarea rows="4" cols="50">
+내용을 입력해 보세요.
+</textarea>
+		<input type="submit" value="회원가입"> <input type="reset" value="취소">
+	</form>
+
+</body>
+</html>
