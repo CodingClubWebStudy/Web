@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Assignment2 </title>
+		<style type="text/css">
+			.box { 
+				border:1px solid; 
+				padding-left: 30px;
+				padding-top: 18px;
+				padding-right: 20px;
+				padding-bottom: 15px;
+				width: 820px;}
+		</style>
+	</head>
+	<body>
+		<h2>Registration Form</h2>
+		<form>
+			<div class="box">
+				성 <input type="text" name="last name"/><p/>
+				이름 <input type="text" name="first name"/><p/>
+				이메일 주소 <input type="text" name="email"/><p/>
+				전화번호 <input type="text" name="phone"/><p/>
+				학년
+				<select name="grade">
+					<option value="zero">--</option>
+					<option value="first">1</option>
+					<option value="second">2</option>
+					<option value="third">3</option>	
+				</select><p/>
+				성별:
+				<input type="radio" name="sex" value="female">여자</input>
+				<input type="radio" name="sex" value="male">남자</input><br>
+				웹 스터디에 바라는 점<br>
+				<textarea rows="5" cols="95" placeholder="500자 이상 써주세요.">
+				</textarea>
+				</div>
+				<input type="submit" value="submit"></input>
+		</form>
+	</body>
+</html>
