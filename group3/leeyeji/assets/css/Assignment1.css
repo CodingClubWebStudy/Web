@@ -1,0 +1,43 @@
+body{
+	margin-top: 50px;
+	background-color: #e6e6e4;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height:1.8em;
+}
+
+#wrapper{
+	width: 700px;
+	margin: 0 auto;
+}
+
+.circle{
+	width: 180px;
+	height: 180px;
+	border-radius: 100px;
+	background-color: #fcee49;
+	margin: 0 auto 30px;
+	border: 5px solid #ffffff;
+}
+
+.circle p{
+	font-size: 30px;
+	font-weight: bold;
+    color: #ffffff;
+    line-height:1.2em;
+	margin: 42px;
+}
+
+img{
+	width: 700px;
+	margin-top: 10px;
+}
+
+h2{
+	margin-top: 30px;
+}
+
+h1, h2{
+	font-weight: bold;
+	text-align: center;
+}
