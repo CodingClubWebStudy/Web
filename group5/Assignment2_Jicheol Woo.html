@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Registration Form</title>
+</head>
+<body>
+	<form action="">
+	<h1>Registration Form</h1>
+	<p><label>성 : <input type="text" name="SURNAME" placeholder="성을 입력해 주세요" required></label></p>
+	<p><label>이름 : <input type="text" name="NAME" placeholder="이름을 입력해 주세요" required></label></p>
+	<p><label>이메일 주소 : <input type="email" name="EMAIL" placeholder="이메일을 입력해 주세요" required></label></p>
+	<p>
+		전화번호
+		<select name="Tel">
+			<option value="selection">선택</option>
+			<option value="SKT">SKT</option>
+			<option value="KT">KT</option>
+			<option value="LG UPlus">LG UPlus</option>
+		</select>
+		<input type="tel" name="TEL_NUM" placeholder="숫자만 입력" required>
+	</p>
+	<p>
+		학년
+		<select name="Grade">
+			<option value="selection">학년</option>
+			<option value="high">고등학생 이하</option>
+			<option value="U_1">대학교 1학년</option>
+			<option value="U_2">대학교 2학년</option>
+			<option value="U_3">대학교 3학년</option>
+			<option value="U_4">대학교 4학년</option>
+			<option value="senior">대졸 이상</option>
+			<option value="extra">기타</option>
+		</select>
+	</p>
+	<p>
+		성별 : 
+		<input type="radio" name="male" value="male"> 남자
+		<input type="radio" name="female" value="female"> 여자
+	</p>
+	<p>
+		웹스터디에 바라는 점!
+		<br />
+		<textarea name="content" rows="5" cols="50" placeholder="500자 이상"></textarea>
+	</p>
+	<input type="submit" value="submit">
+	</form>
+</body>
+</html>
