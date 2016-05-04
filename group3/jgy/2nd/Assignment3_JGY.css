@@ -1,0 +1,94 @@
+/* reset */
+
+@charset "utf-8";
+body {font-size:12px; font-family:sans-serif; color:#666666; -webkit-text-size-adjust:none; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,span,button,img {padding:0; margin:0;}
+table {width:100%; border:0; border-collapse:collapse; border-spacing:0;}
+fieldset,img,abbr,acronym {border:0}
+address,caption,cite,code,dfn,th,var {font-weight: normal;font-style: normal;}
+ol,ul{list-style:none}
+caption{text-align:left}
+q:before,q:after{content:'';}
+
+img, input, button, select, textarea {vertical-align:middle}
+legend, hr, caption {visibility:hidden; font-size:0; width:0; height:0; line-height:0}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display:block;}
+
+/* common */
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+header {
+	padding: 5px 3px 5px 0px;
+	background-image: url("./jgy_back01.jpg");
+}
+nav {
+	overflow: hidden;
+
+}
+nav li {
+	float: right;
+
+}
+
+nav li+li {
+	margin-right: 5px;
+}
+
+.box01 {
+	padding: 25px 0;
+	background-image: url("./jgy_back02.jpg");
+
+}
+h1 {
+	padding: 0px 0px 15px 0px;
+	text-align: center;
+}
+article {
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #f7f8f9;
+
+}
+article h3{
+	margin-bottom: 5px;
+}
+
+article p{
+	margin-bottom: 10px;
+}
+
+article p:last-child {
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	padding: 5px 0;
+	background-color:#60878e;
+	color:#fff;
+}
+
+.line01, .line02 {
+	font-size: 0px;
+	text-align: center;
+
+}
+
+.line01 li, .line02 li {
+	display: inline-block;
+}
+
+.box02 li a:hover {
+	opacity: 0.5;
+}
+
+footer {
+	border-top:1px solid black;
+	padding: 10px 0px 10px 120px;
+	margin-top: 10px;
+}
