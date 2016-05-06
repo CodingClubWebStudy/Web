@@ -41,6 +41,7 @@
 					<div class="col-sm-6 form-group">
 						<label for="grade">학년</label><br>
 						<select id="grade" name="grade">
+							<option value="-">---</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -50,8 +51,10 @@
 
 					<div class="col-sm-6 form-group">
 						<label for="gender">성별</label><br>
-						<input type="checkbox" name="gender" value="male" id="gender">남자
-						<input type="checkbox" name="gender" value="female" id="gender">여자
+						<label for="male">남자</label>
+						<input type="radio" name="gender" value="male" id="male">
+						<label for="female">여자</label>
+						<input type="radio" name="gender" value="female" id="female">
 					</div>
 					<div class="form-group">
 						<label for="contents">웹스터디에 바라는점</label>
