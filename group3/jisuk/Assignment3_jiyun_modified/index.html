@@ -10,6 +10,13 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="jquery.fancybox.pack.js?v=2.1.5"></script>
+
 </head>
 <body>
 
@@ -52,14 +59,14 @@
 			</h2>
 			<div class="gallery_list clearfix">
                 <ul>
-                    <li><a href="#"><img src="img/img1.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img2.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img3.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img4.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img5.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img6.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img7.jpg" alt="뉴욕사진"></a></li>
-                    <li><a href="#"><img src="img/img8.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img1.jpg"><img src="img/img1.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img2.jpg"><img src="img/img2.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img3.jpg"><img src="img/img3.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img4.jpg"><img src="img/img4.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img5.jpg"><img src="img/img5.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img6.jpg"><img src="img/img6.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img7.jpg"><img src="img/img7.jpg" alt="뉴욕사진"></a></li>
+                    <li><a class="fancybox" rel="group" href="img/img8.jpg"><img src="img/img8.jpg" alt="뉴욕사진"></a></li>
                 </ul>
             </div>		
 		</div>
@@ -81,5 +88,10 @@
 	Powered by <a href="#">Enlighten Hosting</a> and <a href="#">Vadmin 3.0 CMS</a></p>	
 </div><!-- //footer -->
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
 </body>
 </html>
