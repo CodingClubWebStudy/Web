@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <title>Assignment2_hakyungin</title>
+  <style type="text/css">
+
+    /* 기본설정 */
+    a{text-decoration:none; color:#000000;}
+    a:hover{color:#FF0000;}
+
+    /* nav tag */
+    nav ul{padding-top: 10px;}  /* 상단 여백 10px */
+    nav ul li{
+      display:inline;               /* 세로나열을 가로나열로 변경 */
+      border-left: 1px solid #999;  /* 각 메뉴의 왼쪽에 "|"로 분류표시 */
+        font: bold 12px Dotum;      /* 폰트 설정 = 12px의 돋움체 굵은 글씨로 표시 */
+        padding:0 10px;             /* 각 메뉴 간격 */
+    }
+    nav ul li: first-child{border-left:none;}   /* 메뉴 분류 중 제일 왼쪽의 "|" 삭제 */
+
+    /* 썸네일 이미지를 올려놓을 갤러리 스타일 */
+    #gallery {
+      border: 10px solid #000000; /* 굵은 테두리 */
+      height: 260px; /* 높이 */
+      width: 740px; /* 너비 */
+      margin-left: auto; /* 여백 자동 */
+      margin-right: auto;
+      overflow: visible; /* 오버플로일 경우 visible로 */
+      background: #F5DEB3; /* 배경색 */
+  }
+
+  /* 썸네일 목록 전체 스타일 */
+  #gallery ul{
+      margin-left:-30px; /* 갤러리 가운데에 콘텐츠가 올 수 있도록 */
+  }
+
+  /* 썸네일 각 항목에 대한 스타일 */
+  #gallery ul li {
+      list-style:none;  /* 불릿 없앰 */
+      display:inline-table; /* 테이블 스타일로 배치*/
+      padding:10px;	/* 안여백은 각각 10px로 */
+   }
+
+   /* 평소 큰 이미지 .pic 에 대한 스타일 */
+   #gallery ul li .pic{
+      visibility:hidden; /* 처음에는 보이지 않게 */
+      position:absolute; /* 고정 위치 */
+      margin-top:10px; /* 상단 여백 */
+      margin-left:-20px; /* 왼쪽으로 20픽셀 이동해서 */
+   }
+
+
+  #gallery ul li .small:hover{
+      cursor:pointer;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">About</a><li>
+      <li><a hret="#">Portfolio</a><li>
+      <li><a hret="#">Contact</a><li>
+    </ul>
+  </nav>
+  <section>
+    <article>
+      <h1>KyungIn Ha</h1>
+      <p>웹 스터디 두 번째 과제입니다.</p>
+    </article>
+    <article>
+      <h1>PORTFOLIO</h1>
+      <div id="gallery">
+      <ul>
+          <li> <img src="HW2_0.jpg" class="small" width="120" height="90"> <img src="HW2_0.jpg" class="pic"> </li>
+          <li> <img src="HW2_1.jpeg." class="small" width="120" height="90"> <img src="HW2_1.jpeg" class="pic">  </li>
+          <li> <img src="HW2_2.jpg" class="small" width="120" height="90"> <img src="HW2_2.jpg" class="pic"> </li>
+          <li> <img src="HW2_3.jpg" class="small" width="120" height="90"> <img src="HW2_3.jpg" class="pic"> </li>
+          <li> <img src="HW2_4.png" class="small" width="120" height="90"> <img src="HW2_4.png" class="pic"> </li>
+          <li> <img src="HW2_5.png" class="small" width="120" height="90"> <img src="HW2_5.png" class="pic">  </li>
+          <li> <img src="HW2_6.png" class="small" width="120" height="90"> <img src="HW2_6.png" class="pic">  </li>
+          <li> <img src="HW2_7.png" class="small" width="120" height="90"> <img src="HW2_7.png" class="pic">  </li>
+          <li> <img src="HW2_8.png" class="small" width="120" height="90"> <img src="HW2_8.png" class="pic">  </li>
+          <li> <img src="HW2_9.png" class="small" width="120" height="90"> <img src="HW2_9.png" class="pic">  </li>
+       </ul>
+     </div>
+    </article>
+  </section>
+</body>
+
+
+<footer>
+
+</footer>
+</html>

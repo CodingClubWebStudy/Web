@@ -1,0 +1,52 @@
+header {
+	padding-right:10px;
+	height: 20px;
+	background-color : #EF6E59;
+	color:#fff;	
+	text-align:right;
+}
+footer{
+	padding-top:1px;
+	padding-left:10px;
+	clear:both;
+	height: 60px;
+	background-color:white;
+		
+}
+#one{
+	color:white;
+	text-align:center;
+	background-color : rgba(236,161,149,0.8);
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+#two{
+
+	font-size:30px;
+	color:#fff;	
+	background-color : #EF6E59;
+	text-align: center;
+
+}
+
+
+#td1{
+	color:black;
+	text-align:left;
+	background-color : rgb(248,232,230);
+	margin:auto;
+	padding-bottom:10px;
+}
+
+#td2{
+	margin:auto;
+}
+
+a:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=100)
+}
+
+
