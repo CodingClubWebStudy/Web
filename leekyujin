@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>portfolio</title>
+</head>
+<style>
+.head{background-color: gray; text-align:right; height:30px; }
+.top_font{color:white;}
+.middle{background-color:#d9dadc; width:1400px;height:400px;}
+.middle_text{text-align:center}
+.portfolio{background-color:#6797e6; width:1400px; height:50px; text-align:center; }
+.image{background-image:url(http://i.imgur.com/dfYkqvZ.jpg); background-position:center center;  width:600px; height:300px; background-repeat:no-repeat;}
+.hidden{display: none;}
+</style>
+<body>
+<div class="head"><font class="top_font">About portfolio contact</font></div>
+<div class="middle"><h1 class="middle_text">kyujin</h1>
+<p class="middle_text"><h1>안녕하세요 이규진입니다.</h1> 디자이너로 일하다가 코딩에도 관심이 생겨 공부를 시작하게 되었습니다. 별로 아는 것은 없지만 열심히 해보겠습니다.<h1>취미</h1>영화보는것과 여러가지 일을 벌리는 것을 좋아합니다.<h1>웹경험</h1>솔직히 거의 없습니다.대부분의 기간동안 편집디자이너로 있어서 거의 아는바가 없다가 외주로 웹일을 받았는데 코딩까지 해서 납품을 해야 보수가 더 좋다는 것을 알고 시작하는 단계입니다.  </p>
+<div class="portfolio"><h1>portfolio<h1></div>
+<div class="image"><div class="hidden">hidden</div></div>
+<hr>
+<div class="footer">@2016.All right reserved</div>
+</body>
+
+</html>
