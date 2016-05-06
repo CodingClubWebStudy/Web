@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+</head>
+<style>
+    .clearfix:after{content: '';display: block;clear: both;}
+    .info .info_img,.info .info_txt{
+        float: left;
+        width:49%;
+    }
+    .info .info_img img{
+        width: 100%;
+    }
+    .info .info_txt {
+        padding-left:10px; 
+    }
+    .info .info_txt .tit{
+        font-size:32px;
+        font-weight:bold;
+    }
+    .info .info_txt .tit span{
+        color:dodgerblue;
+    }
+    .info .info_txt p{
+        line-height:1.5;
+        padding-bottom:10px;
+    }
+</style>
+<body>
+  <div class="info clearfix">
+    <div class="info_img">
+        <img src="Assignment1_jiyun_img.jpg" alt="study">
+      </div>
+      <div class="info_txt">
+        <p class="tit">
+            
+           <h3>123123</h3>
+          안녕하세요, 웹 스터디 3팀의 팀원 <span>김지윤</span> 입니다.
+        </p>
+        <p>
+          저는 코딩클럽 청년샘2기로 활동하고 있으며 웹에이젼시에서 일을 하고 있습니다. 이렇게 스터디를 통해 만나서 반갑습니다&#126;
+          제가 아직 행아웃에 익숙하지 않아서 꼭 오프라인으로 스터디를 하고자 했지만, 시간과 공간상의 문제로 온라인으로 모이게 되었네요ㅎㅎ
+          &#40;나중에 스터디가 진행 되면서 시간이 맞는다면 오프라인으로도 종종 만나뵈었으면 좋겠습니다&#41;
+        </p>
+        <p>
+          무언가 더 소개를 해야할 것만 같은데 지금 당장 글이 안써지네요 하하.. 스터디를 하면서 서로 더 알아가고 공유하며 함께 유익한 시간을 가졌으면 좋겠습니다.    
+        </p>
+        <p>
+        코딩클럽
+        </p>
+      </div>
+  </div>
+  <div class="form">
+    <h1>Registration Form</h1>
+    <div>
+        <form action="registration_submit.php" method="get">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <p>성 <input type="text" name="lastname"></p>
+                <p>이름 <input type="text" name="firstname"></p>
+                <p>이메일주소 <input type="email" name="email"></p>
+                <p>전화번호 <input type="number" name="phone"></p>
+                <p>학년 
+                    <select name="grade">
+                        <option>-</option>
+                        <option value="1학년">1학년</option>
+                        <option value="2학년">2학년</option>
+                        <option value="3학년">3학년</option>
+                        <option value="4학년">4학년</option>
+                    </select>
+                </p>
+                <p>성별 :
+                     <label for="female">여자</label><input type="radio" id="female" name="sex" value="여자">
+                     <label for="male">남자</label><input type="radio" id="male" name="sex" value="남자">
+                </p>
+                <p>
+                    웹 스터디에 바라는 점<br><br>
+                    <textarea rows="10" cols="100" name="hope"></textarea>
+                </p>
+                <p><input type="submit" value="submit"></p>
+            </fieldset>
+        </form>
+    </div>
+   </div>
+</body>
+</html>
