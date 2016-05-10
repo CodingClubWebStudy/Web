@@ -1,0 +1,28 @@
+
+body{margin:0; padding:0;}
+#wrap{background:url('images/bg_1.jpg') no-repeat;}
+
+/* header */
+.header{width: 100%; height: 60px; background-color: #ffffff;}
+.logo{margin: 0; padding: 10px 0 10px 116px;}
+
+#topMenu {position: absolute; top:10px; right: 10%;}
+#topMenu ul li {list-style: none; float: right; vertical-align: middle;}
+#topMenu .menuLink{text-decoration: none; padding: 0 10px 10px 10px; color: #202242; display: inline-block; font-size: 16px; font-family: 'Questrial', sans-serif;}
+#topMenu .menuLink:hover{color: #fa5d5d;}
+
+/* contents */
+h1 {color: #fa5d5d; margin-top: 25px; font-family: Arial, sans-serif;}
+h2 {font-family: 'nanumgothic', 'malgungothic'; margin-top: 40px;}
+section {margin: 0 auto; text-align: center;}
+article {width: 970px; height: 470px; margin: 0 auto; border: 6px solid #fff}
+#con1 p {font-family: 'nanumgothic', 'malgungothic';}
+#con2 {background-color: #202242; height: 653px;}
+.port1 h1 {padding-top: 30px;}
+
+tr#portfolio_list td {display: table; float:left; margin:0; opacity:1;}
+
+tr#portfolio_list td:hover {opacity:0.5;}
+
+/* footer */
+h5 {text-align: center; font-family: 'Questrial', sans-serif; color: #202242;}
