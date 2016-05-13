@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>망고플레이트: 나만의 맛집 검색</title>
+</head>
+<body>
+<--!상단영역(로고, 네비게이션)-->
+<header class="header">
+<--!로고 부분-->
+<h1>
+	<a href="/" class="btn-mp" onclick="">MANGO PLATE</a>
+</h1>
+<--! 네비게이션 부분 -->
+<nav class="nav-menus">
+	<div class="menus">
+	<a href="/">맛집 리스트</a>
+	<a href="/">망고 스토리</a>
+	</div>
+	<button class="btn-user"></button>
+</nav>
+</header>
+
+<--! 본문 영역 -->
+<main class="pg-main">
+<--! 본문의 헤더 부분(검색, 해쉬태그, 앱 다운 링크) -->
+<header class="main-header">
+	<h1 class="title">
+	"솔직한 리뷰, 믿을 수 있는 평점!"<br>
+	"망고 플레이트"</h1>
+	<--! 페이스북 위젯 -->
+	<div class="fb-like fb_iframe_widget"></div>
+	<--! 전체 검색 -->
+	<fieldset class="main-search ng-scope">
+		<legend>전체검색</legend>
+		<label for="main-search">
+			<span class="icon">검색</span>
+			<input type="text" placeholder="지역, 식당 또는 음식"></input>
+		</label>
+		<input type="submit" value="검색"></input>
+	</fieldset>
+	<--! 트렌딩 검색어 -->
+	<aside class="trend-search">
+		<h1>트렌딩 검색어</h1>
+		<p>
+			<a href="/">#케이크</a>
+			<a href="/">#딸기</a>
+		</p>
+	</aside>
+	<--! 앱 다운받기 -->
+	<aside class="shortcut-app type-main">
+		<h1>내가 좋아하는 식당을 망고플레이트 앱에서 찾아보세요.</h1>
+		<button class="android-download-btn"></button>
+		<button class="ios-download-btn"></button>
+	</aside>
+</header>
+	<--!메인 페이지 총 7개의 섹션으로 나누어 짐 -->
+<article class="contents main-padding">
+	<--!1.믿고 보는 맛집 리스트 -->
+	<section class="module popular_top_list">
+		<div class="module_title_wrap">
+			<a href="/">더보기</a>
+		</div>
+		<div class="slider-container toplist-slider">
+			<button class="btn-nav prev"></button>
+			<button class="btn-nav prev"></button>
+			<div class="top_list_slide">
+				<ul class="top_list_slider">
+					<li style="background-image: url(/);"></li>
+				</ul>
+			</div>
+			<div class="top_list_slide">
+				<ul class="top_list_slider">
+					<li style="background-image: url(/);"></li>
+				</ul>
+			</div>
+			<div class="top_list_slide">
+				<ul class="top_list_slider">
+					<li style="background-image: url(/);"></li>
+				</ul>
+			</div>
+			<ul class="top_list_slide_dots">
+				<li class="slick-active">
+					<button type="button">"1"</button>
+				</li>
+				<li>
+					<button type="button">"2"</button>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<--!2.맛집 에디터의 초이스(1과 동일) -->
+	<section>
+		<div class="module_title_wrap"></div>
+	</section>
+	<--!3.요새 뜨는 식당 -->
+	<section>
+		<div class="module_title_wrap"></div>
+		<div class="slider-container ng-scope">
+			<ul class="list-restaurants type-main">
+				<li class="restaurant-item">
+					<div class="restaurant_inner-wrap">
+						<--! 전체를 누르면 해당 페이지로 넘어 갈 수 있게 a태그 사용 -->
+						<a href="">
+							<figure>
+								<div class="restaurant-item-photo"></div>
+								<figcaption>
+									<div class="info">
+										<p>이름</p>
+										<p>위치</p>
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<--!4.신규 오픈 식당 -->
+	<section>
+		<div class="module_title_wrap"></div>
+	</section>
+	<--!5.최근 주목 받는 리뷰 -->
+	<section>
+		<div class="module_title_wrap"></div>
+	</section>
+	<--!6.메뉴로 맛집 찾기 -->
+	<section>
+		<h1 class="title">메뉴로 맛집 찾기</h1>
+		<div class="category">
+			<button class="food_btn" data-type-value =""></button>
+			<button class="food_btn" data-type-value =""></button>
+			<button class="food_btn" data-type-value =""></button>
+		</div>
+		<p class="keywords" style="display: block;" data-parent-type-value=""></p>
+			<a href="/"></a>
+			<a href="/"></a>
+			<a href="/"></a>
+		<p class="keywords" style="display: none;" data-parent-type-value=""></p>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		<p class="keywords" style="display: none;" data-parent-type-value=""></p>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		<p class="keywords" style="display: none;"></p>
+	</section>
+	<--!7.지역별 맛집 찾기(6번과 동일) -->
+	<section></section>
+</article>
+</main>
+
+<--! 하단 영역 -->
+<footer>
+	<div class="inner">
+		<h1>
+		<a href="/">MANGOPLATE</a>
+		</h1>
+		<p class="sns-shortcut">
+			<a href="">인스타그램</a>
+			<a href="">네이버</a>
+		</p>
+		<nav class="link-external">
+			<ul>
+				<li>망고플레이트 채용</li>
+				<li>이용약관</li>
+				<li>커뮤니티 가이드라인</li>
+			</ul>
+		</nav>
+		<div class="copyright">
+			<p>
+          	㈜ 망고플레이트 대표이사: 김대웅 | 사업자 등록번호: 211-88-92374 |
+         	</p>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
