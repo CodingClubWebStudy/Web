@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>The 1st week Mijin's Assignment2</title>
+</head>
+
+<body>
+<h1> 영단기 회원가입을 환영합니다. </h1>
+	<h2>기본 정보 입력</h2>
+	<form action="http://localhost.com/login.php" method="post">
+		<p><input type="text" name="id" value="" placeholder="아이디"> </p>
+		<p><input type="text" name="pwd" value="" placeholder="비밀번호"> </p>
+		<p><input type="text" name="pwd_check" value="" placeholder="비밀번호 재확인"> </p>
+		<p><input type="text" name="name" value="" placeholder="이름"> </p>
+		<select name="first_num">
+			<option value="010" selected="selected">010</option>
+			<option value="016">016</option>
+			<option value="011">011</option>
+			<option value="019">019</option>
+		</select>
+		<input type="text" name="middle_num" value="" placeholder="휴대전화 중간자리"> 
+		<input type="text" name="last_num" value="" placeholder="휴대전화 뒷자리"> </p>
+		<p><label>성별
+		<input type="radio" name="chk_info" value="man">남자
+		<input type="radio" name="chk_info" value="woman">여자
+		</label></p>
+		<p><input type="text" name="birth_year" value="" placeholder="생년(숫자만 기입)"> 
+		<input type="text" name="birth_month" value="" placeholder="월(숫자만 기입)"> 
+		<input type="text" name="birth_day" value="" placeholder="일(숫자만 기입)"> </p>
+		<p><input type="text" name="email" value="" placeholder="이메일"> </p>
+		<br>
+	<h2>선택 정보 입력</h2>
+		<p><select name="local_num">
+			<option value="seoul" selected="selected">02</option>
+			<option value="gyeonggi">031</option>
+			<option value="incheon">032</option>
+			<option value="gangwon">033</option>
+			<option value="chungnam">041</option>
+			<option value="daejeon">042</option>
+			<option value="chungbuk">043</option>
+			<option value="busan">051</option>
+			<option value="ulsan">052</option>
+			<option value="daegu">053</option>
+			<option value="gyeongbuk">054</option>
+			<option value="gyeongnam">055</option>
+			<option value="jeonnam">061</option>
+			<option value="gwangju">062</option>
+			<option value="jeonbuk">063</option>
+			<option value="jeju">064</option>
+		</select>
+		<input type="text" name="middle_house_num" value="" placeholder="전화번호 앞자리">
+		<input type="text" name="last_house_num" value="" placeholder="전화번호 뒷자리">
+		</p>
+		<p><input type="text" name="zipcode" value="" placeholder="우편번호">
+		<input type="button" value="우편번호찾기" onclick="window.open('http://post.cherrypost.net/post_code_search.php')">
+		</p> 
+		<p><input type="text" name="addr" value="" placeholder="주소"></p>
+		<p><input type="text" name="addr_detail" value="" placeholder="상세주소"></p>
+		<br>
+		<p><input type="submit" value="가입하기"> </p>
+	</form>
+</body>
+</html>
