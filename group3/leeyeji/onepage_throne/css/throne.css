@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*reset*/
+
+body{
+	margin: 0px;
+}
+
+h1, h2, h3{
+	margin: 0px;
+}
+
+p{
+	font-size: 14px;
+	color: #9a9a9a;
+	line-height: 1.8em
+}
+
+span{
+	color: #9a9a9a;
+	font-weight: bold;
+}
+
+ul{
+	list-style:none;
+}
+
+/*layout*/
+
+.company, .directors{
+	margin-top: 50px;
+}
+
+/*header*/
+
+header{
+	overflow: hidden;
+	min-height: 50px;
+	height: 90px;
+	width: 1300px;
+	margin: 0px auto;
+}
+
+header h1{
+	width: 155px;
+	height: 90px;
+	line-height: 90px;
+	float: left;
+	margin: 0px 160px 0px 50px;
+	background: url("../img/logo.png") no-repeat center center;
+}
+
+header ul{
+	float: left;
+	height: 90px;
+	line-height: 90px;
+	margin: 0px;
+	padding: 0px;
+}
+
+header ul li{
+	font-size: 12px;
+	color: #bdbdbd;
+	float: left;
+	margin-right: 40px;
+}
+
+header ul li:hover{
+	color: #666666;
+}
+
+header div{
+	float: right;
+	margin: 23px 0px 0px 15px;
+}
+
+header .search{
+	margin-right: 50px;
+}
+
+header div p{
+	width: 44px;
+	height: 44px;
+	margin: 0px;
+	background-color: #808080;
+}
+
+/*banner*/
+
+.banner{
+	width: 100%;
+	height: 484px;
+	/*position: relative;*/
+	min-width: 1300px;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 110%;
+	height: auto;
+}
+
+.banner > div > span{
+	font-size: 10px;
+	color: white;
+	background-color: black; 
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+.banner div{
+	text-align: right;
+	position: absolute;
+	padding-right: 50px;
+	top: 35%;
+	right: 0%;
+	/*position: relative;
+	top: -350px;*/
+}
+
+/*company*/
+
+.company{
+	overflow: hidden;
+	min-width: 1300px;
+}
+
+.company h2{
+	margin-bottom: 20px;
+}
+
+.company .about_img{
+	float: left;
+	width: 50%;
+	background: url("../img/about_company_1-768x300.jpg") no-repeat center center;
+	height: 300px;
+}
+
+.company .about_txt{
+	float: left;
+	width: 50%;
+	height: 200px;
+	background-color: #eaeaea;
+	padding: 50px 0px 50px 0px;
+}
+
+.company .about_txt h2, .about_txt span, .about_txt p{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*directors*/
+
+.directors{
+	overflow: hidden;
+	min-width: 1300px;
+}
+
+.directors h2{
+	margin-bottom: 20px;
+}
+
+.directors h3{
+	margin-bottom: 20px;
+}
+
+.directors .directors_box{
+	width: 50%;
+	float: left;
+	background-color: #eaeaea;
+}
+
+.directors img{
+	width: 50%;
+	float: left;
+}
+
+.directors .directors_box div{
+	padding-top: 40px;
+	background-color: #eaeaea;
+	overflow: hidden;
+}
+
+.directors_box div h3, .directors_box div span, .directors_box div p{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.directors .directors_box img:hover{
+	background-color: #000;
+		-webkit-filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+/*footer*/
+
+footer{
+	margin-top: 30px;
+}
+
+footer p{
+	color: #9a9a9a;
+	font-size: 0.7em;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
