@@ -1,0 +1,12 @@
+.bx-wrapper {
+    margin: 0 auto ;
+    background: #fff; /* [2015-11-16] 배경색상 변경 */
+}
+
+.bx-viewport {
+    z-index: 0;
+}
+
+.bx-wrapper .bx-loading {
+    background: ../image/bxslider/4.2.5/bx_loader.gif) center center no-repeat #fff;
+}

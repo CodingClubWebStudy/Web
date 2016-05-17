@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@font-face {
+    font-family:'Nanum';
+    font-weight:400;
+    src: url('https://cdn.bmf.kr/font/NanumGothic.eot');
+    src: url('https://cdn.bmf.kr/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.bmf.kr/font/NanumGothic.woff') format('woff'),
+         url('https://cdn.bmf.kr/font/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+    font-family:'NanumBold';
+    font-weight:600;
+    src: url('https://cdn.bmf.kr/font/NanumGothicBold.eot');
+    src: url('https://cdn.bmf.kr/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.bmf.kr/font/NanumGothicBold.woff') format('woff'),
+         url('https://cdn.bmf.kr/font/NanumGothicBold.ttf') format('truetype');
+}
+@font-face {
+    font-family:'NanumEB';
+    font-weight:900;
+    src: url('https://cdn.bmf.kr/font/NanumGothicExtraBold.eot');
+    src: url('https://cdn.bmf.kr/font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.bmf.kr/font/NanumGothicExtraBold.woff') format('woff'),
+         url('https://cdn.bmf.kr/font/NanumGothicExtraBold.ttf') format('truetype');
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+{margin:0; padding:0; border:0; outline:0; font-size:100%; font-weight: normal; vertical-align:baseline; background:transparent;}
+
+html{overflow-y: scroll; -webkit-text-size-adjust: none;}
+
+body {font-family: Verdana, 'Nanum', 'Apple Gothic', 'Malgun Gothic', 'Nanum Gothic', 'Dotum', Arial, sans-serif; font-size: 13px; /*overflow-x: hidden;*/ background: #fff; color: #333;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+
+ol, ul, dl{list-style: none}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none}
+
+table {border-collapse: collapse; border-spacing: 0}
+
+a {text-decoration:none; color:#333; }
+
+label {cursor:pointer; }
+input, select {vertical-align:middle; }
+button, input, select, textarea {font-size:100%; margin:0; vertical-align:middle; *vertical-align:middle;}
+button, input {line-height:normal; }
+button, select {text-transform:none; }
+
+.blind, hr, caption {display: block; overflow: hidden; position: absolute; top: 0; left: -9999em; width:0.1%; height:0.1%;line-height: 0.1%; font-size:0.1%;}
+i, em, address{font-style: normal; font-weight: normal;}
+
+input[type=submit], input[type=image], button{cursor: pointer;}
+
+input[type="text"]::-ms-clear { display: none; }
+input[type="checkbox"] { width: 20px; height: 20px; margin-right: 5px; vertical-align: middle; }
+input[type="radio"] { width: 20px; height: 20px; margin-right: 5px; vertical-align: middle; }
+select { height: 37px; padding: 0; outline: 0; display: inline-block; zoom: 1; border: 1px solid #e1e1e1; }
+
+.input { height: 34px; padding: 0 7px; background: #fff; border: 1px solid #e1e1e1; font-size: 13px; font-weight: bold; line-height: 33px; color: #444; outline: 0; }
+.input[type="text"]:focus, .input[type="password"]:focus { border: 1px solid #2ac1bc; !important; }
+textarea.input { height: auto; padding: 7px; overflow: auto; line-height: 150%; }
+.input_blank { height: 34px; padding: 0 7px; background: transparent; font-size: 13px; font-weight: bold; line-height: 33px; color: #444; outline: 0; }
+.datepicker { text-align: center; }
+.ui-datepicker select { height: auto !important; }
+
+
+/* 공통 */
+.imgthumb img{width: 100%; display: inline-block; }
+
+.btn_area{overflow: hidden; clear: both;}
+.btn_area.center{text-align: center;}
+
+.btn{display: inline-block; zoom:1; *display:inline;  font-family: "NanumBold", "Malgun Gothic", sans-serif; font-size: 14px; cursor: pointer; border: none; overflow: visible;}
+.btn span{display: inline-block; zoom:1; *display:inline;  margin-top: -2px;}
+
+.btn_white{border: 1px solid #ccc; background: #fff; color: #666;}
+.btn_white:hover, .btn_white:focus{background: #f4f4f4;}
+
+.btn_gray{background: #7b766f; color: #fff;}
+.btn_gray:hover, .btn_gray:focus{background: #69645f;}
+
+.btn_lgray{background: #918d87; color: #fff;}
+.btn_lgray:hover, .btn_lgray:focus{background: #79746f;}
+
+.btn_soldout{background: #d7d6d4; color: #fff;}
+.btn_soldout:hover, .btn_soldout:focus{background: #d7d6d4;}
+
+.btn_mint{background: #2ac1bc; color: #fff;}
+.btn_mint:hover, .btn_mint:focus{background: #17aba6;}
+
+.btn_soldout2{color: #bdbcb9; border: 1px solid #e3e2df; background: #fff;}
+.btn_soldout2:hover, .btn_soldout2:focus{color: #bdbcb9; border: 1px solid #e3e2df; background: #fff;}
+
+.btn_white2{border: 1px solid #d4d4d4; background: #fff; color: #86827b;}
+.btn_white2:hover, .btn_white2:focus{background: #aba8a4; border-color: #aba8a4; color: #fff;}
+
+.btn_big{width: 240px; height: 66px; font-size: 18px;}
+.btn_small{width: 100px; height: 40px; font-size: 14px; text-align: center;}
+.btn_mini{width: 72px; height: 32px; font-size: 13px; line-height: 32px; text-align: center;}
+
+.btn_file_add{font-size: 12px; padding: 7px 10px;}
+
+.btn_join_tb{ height: 36px; margin: 3px; padding: 0 20px;text-align: center; }
+a.btn.btn_join_tb span{font-weight: normal; display: inline-block; zoom:1; *display:inline;  margin-top: 9px; font-size: 14px;}
+
+.btn_tb_in{min-width: 50px; height: 24px; padding: 0 5px; margin: 0 1px; font-size: 12px; line-height: 24px; text-align: center;}
+
+.icon_receipt { margin-left: 5px; }
+
+.fLeft{float: left;}
+.fRight{float: right;}
+
+.clear{clear: both;}
+.clearfix {*zoom: 1;}
+.clearfix:before,
+.clearfix:after {display: table;content: "";line-height: 0;}
+.clearfix:after {clear: both;}
+
+.bf_mint{color: #2ac1bc;}
+
+.pt0{padding-top: 0;}
+.pb0{padding-bottom: 0 !important;}
+
+.mt0{margin-top: 0;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt30{margin-top: 30px !important;}
+.mt40{margin-top: 40px !important;}
+
+.mb0{margin-bottom: 0 !important;}
+.mb10{margin-bottom: 10px; }
+.mb20{margin-bottom: 20px; }
+.mb30{margin-bottom: 30px !important; }
+.mb50{margin-bottom: 50px;}
+.mb75{margin-bottom: 75px;}
+.mb100{margin-bottom: 100px; }
+
+
+/* 섬네일 배송 스타일 공통 */
+/* [2015-12-22] ie7,8에 맞춰 수정 */
+.thumb_img .delivery_type_lst{position: absolute; display: table;overflow: hidden;width: 100%;-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);background: rgba(0,0,0, 0.6);  } /* [2015-12-22] ie7,8 대응 bg처리 */
+.ua-ie-7 .thumb_img .delivery_type_lst, .ua-ie-8 .thumb_img .delivery_type_lst {filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);}
+.thumb_img .delivery_type_lst div {*position: absolute;*top: 50%;display: table-cell;vertical-align: middle;width: 100%;margin: 0 auto;text-align: center;}
+.thumb_img .delivery_type_lst ul {*position: relative;*top: -50%;}
+.thumb_img .delivery_type_lst li{margin:0 15px 8px;font-size: 20px; color: #fff; font-family: "NanumBold", sans-serif; text-align: center;  }
+.thumb_img .delivery_type_lst li span{display: inline-block; zoom:1; *display:inline; padding: 13px 0 4px; background: url(https://cdn.bmf.kr/web/main/delivery_line.png) repeat-x 0 0;}
+.thumb_img .delivery_type_lst li:first-child span{padding:12px 0 4px;background:none;}
+
+/* 뱃지 색상 변경 공통 */
+div.badge{
+	display: inline-block; zoom:1; *display:inline; margin: 0 3px 0 0; padding:7px 0 4px; min-width: 52px; height: 11px;
+	line-height: 11px; text-align: center; font-size: 11px; color: #fff; font-family: Dotum, "Nanum";
+	}
+.ua-chrome div.badge,
+.ua-safari div.badge,
+.ua-firefox div.badge{padding:6px 0 5px; }
+
+div.badge.best{background: #fa6565;}
+div.badge.free{background: #33bdb9}
+div.badge.gift{background: #f8b500; width: 62px;}
+div.badge.coupon{background: #fa6565;}
+div.badge.launching{background: #a974bf;}
+div.badge.event{background: #a974bf; width: 62px;}
+div.badge.stock{background: #585c6a; width: 62px;}
+div.badge.friday{background: #585c6a; width: 62px;}
+div.badge.finish{background: #333333;}
+div.badge.soldout{background: #333333;}
+
+
+/* [2016-02-23] Checkbox */
+.custom_checkbox {position: relative; display: inline-block; *display: inline; *zoom: 1;}
+.custom_checkbox .chk_box {
+	display: inline-block; width: 13px; height: 13px; border: 1px solid #D4D4D4;
+	overflow: hidden; background: url(https://cdn.bmf.kr/web/common/custom_chk_box.png) left 15px no-repeat; vertical-align: middle;
+	cursor: pointer; *display: inline; *zoom: 1
+	;}
+.custom_checkbox.on .chk_box {background-position: left top;}
+.custom_checkbox.on .lbl {color: #2AC1BC;}
+.custom_checkbox .hidden_chk {position: absolute; left: 0; top: 0; display: block; width: 13px; height: 13px; opacity: 0; filter:alpha(opacity=0);}
+
+/* [2016-02-23] radio button */
+.custom_radio {position: relative; display: inline-block; *display: inline; *zoom: 1;}
+.custom_radio .radio_btn {
+	display: inline-block; width: 15px; height: 15px; border: 1px solid #D4D4D4;
+	-moz-border-radius:  50%;
+	border-radius:  50%;
+	overflow: hidden; vertical-align: middle;
+	cursor: pointer; *display: inline; *zoom: 1;
+	}
+.custom_radio.on .radio_btn{background: url(https://cdn.bmf.kr/web/common/custom_radio_btn.png) center center no-repeat;}
+.custom_radio.on .lbl {color: #2AC1BC;}
+.custom_radio .hidden_radio {position: absolute; left: 0; top: 0; display: block; opacity: 0;filter:alpha(opacity=0);}
+
+
+/* Paging [2016-01-04] 새로 작업 */
+.pagination {position: relative; margin: 0px auto 30px; *margin-top:20px; width: 100%; text-align: center; font-size: 0; line-height: 0;}
+.pagination .num {margin:0 5px; vertical-align: middle;}
+.pagination .num a {display: inline-block; margin:0 1px; padding-top: 5px; width: 28px; height: 23px; vertical-align: middle; color: #888; font-size: 13px; line-height: 1.3; border: 1px solid #fff;}
+.pagination .num a:hover {color: #0fbfb9; font-weight:bold;}
+.pagination .num a.current {color: #0fbfb9; font-weight:bold; border-color: #e1e1e1;}
+.btn-paging {overflow: hidden; display: inline-block; width: 30px; height: 30px; vertical-align: middle; font-size: 0; line-height: 0; background: url(https://cdn.bmf.kr/web/common/sp_btn_paging.png) no-repeat;}
+.btn-paging.prev {background-position: 11px 10px;}
+.btn-paging.prev:hover {background-position: 11px -72px;}
+.btn-paging.prev.dimmed {background-position: 11px -31px;}
+.btn-paging.next {background-position: -25px 10px;}
+.btn-paging.next:hover {background-position: -25px -72px;}
+.btn-paging.next.dimmed {background-position:-25px -31px;}
+.board_list .pagination {margin-top:20px;}
+
+
+/********** 페이지 공통 요소 ***********/
+
+/* 스킵 네비게이션  */
+#skip_navigation{position:absolute; text-align:center; width:120px; display:block; background:#2ac1bc; padding: 7px 0; color:#fff; left:-9999px;}
+#skip_navigation:hover,#skip_navigation:active,#skip_navigation:focus{z-index:999999; margin-left:-60px; left:50%;}
+
+/****** 페이지 기본 레이아웃 ******/
+#wrapper{position: relative; }
+
+#header_wrap{position: relative; background: #fff;}
+.header{position: relative; height: 99px; width: 980px; margin: 0 auto; overflow: hidden;}
+
+#navi_wrap{position:relative; z-index: 555;background: #483f35; }
+.navi{width: 980px; height: 52px; margin: 0 auto; overflow:visible;}
+
+#container{position: relative; overflow: hidden; width: 100%;}
+.container_bg1{}
+
+.container_bg2{background: #f7f7f7;}
+.container_bg2 .wrap{width: 980px; margin: 10px auto; background: #fff; overflow: hidden;}
+.container_bg2 .wrap .snb_wrap{float: left; width: 180px; min-height: 300px; padding: 50px 0;}
+.container_bg2 .wrap .content.sub{position: relative; float: right; width: 700px; padding: 50px 50px; min-height: 300px;}
+
+.subtlt{text-align: center; margin-bottom: 20px; overflow: hidden;}
+.subtlt img{display: block; margin: 0 auto;}
+
+.wrap{position: relative;}
+.content{position: relative; width: 980px; margin: 0 auto; overflow: hidden;}
+
+#footer {position: relative; clear: both; background: #fff; overflow: hidden;}
+
+
+/* layout */
+#layout {position: relative; width: 100%; background: #f7f7f7;}
+
+/* 페이지 상단 이벤트 배너 */
+.top_banner_wrap{position: relative; background: no-repeat center top; height: 80px;}
+.top_banner_wrap a.top_banner{display: block; width: 980px; height: 80px; margin: 0 auto; overflow: hidden; text-indent: -3000px;}
+.top_banner_wrap a.btn_close{display: block; width: 40px; height: 40px; overflow: hidden; text-indent: -3000px; position: absolute; top: 20px; right: 50%; margin-right: -498px; }
+
+/* 상단 로컬 메뉴 */
+.lnb_wrap{position:relative; z-index: 1001; background: #fff; border-bottom: 1px solid #e9e9e9;}
+.lnb{background: #fff; height: 36px; overflow: visible; letter-spacing: -0.2px; font-family: "Nanum"}
+.lnb .link_app {float:left;}
+.lnb .link_app > a{display: block; font-size: 12px; height: 17px; padding: 10px 11px 9px; text-align: center; color: #666;}
+.lnb .link_app > a:hover, .lnb .link_app > a:focus{color: #2ac1bc;}
+.lnb ul.lnb_lst{position: relative;float: right;}
+.lnb ul.lnb_lst > li{float: left; position: relative;}
+.lnb ul.lnb_lst > li > a{display: block; font-size: 12px; height: 17px; padding: 10px 10px 9px 10px; text-align: center; color: #666; background: url(https://cdn.bmf.kr/web/common/util_bar.gif) no-repeat 0 12px;}
+.lnb ul.lnb_lst > li:first-child > a{background: none;}
+.lnb ul.lnb_lst > li.util_cart a {padding-right: 0;color: #333;font-family:'NanumBold';}
+.lnb ul.lnb_lst > li.util_cart a .cart_num {padding-left:1px;color: #11c2bc}
+.lnb a.now {color: #2ac1bc;text-decoration: underline;}
+.lnb span.ic{display: inline-block; zoom:1; *display:inline; width: 7px; height: 14px; background: url(https://cdn.bmf.kr/web/common/bul_arr_down.png) no-repeat center 1px; margin-left: 4px;}
+.lnb a:hover span.ic {background-position: center -13px;}
+.lnb a.now span.ic {background-position: center -13px;}
+
+.lnb ul.lnb_lst > li > a:hover, .lnb ul.lnb_lst > li > a:focus{color: #2ac1bc;}
+
+ul.lnb_sub{position: absolute; top: 31px; left: -1px; background: #fff; padding: 6px 0;border: 1px solid #e9e9e9; z-index: 30000;}
+ul.lnb_sub > li > a{display: block; font-size: 12px; padding: 6px 10px 7px 12px; text-align: left;}
+ul.lnb_sub > li > a:hover, ul.lnb_sub > li > a:focus{color: #2ac1bc; text-decoration: underline;}
+
+ul.lnb_sub.mypage{display: none; width: 115px;}
+ul.lnb_sub.cs{display: none; width: 105px;}
+ul.lnb_sub.app{display: none; width: 164px;padding:10px 0;}
+ul.lnb_sub.app > li > a {padding-left:36px; background: url(https://cdn.bmf.kr/web/common/ic_util_app.png) no-repeat 16px 0;}
+ul.lnb_sub.app > li > a.ic_app {background-position: 16px 4px;}
+ul.lnb_sub.app > li > a.ic_google {background-position: 16px -24px;}
+
+
+/****** 헤더 영역 ******/
+
+/* 배민프레시 로고 */
+.header h1{float: left; margin: 19px 0 0;}
+
+/* 상단 메뉴 [2016.01.25]수정 */
+ul.gnb_top{float:right; width:365px;overflow: hidden; }
+ul.gnb_top > li{float: left;}
+ul.gnb_top > li > a{display: block; height:99px; color: #333; font-size: 0; line-height: 0;}
+ul.gnb_top > li > a:hover, ul.gnb_top > li > a:focus{color: #2ac1bc;}
+ul.gnb_top > li.link_best a {width:190px; background: url(https://cdn.bmf.kr/web/common/btn_best.jpg) no-repeat 0 0;}
+ul.gnb_top > li.link_promotion a {width:175px; background: url(https://cdn.bmf.kr/web/common/btn_promotion.jpg) no-repeat 0 0;}
+
+.top_product {float:right;}
+
+/* 검색영역 */
+.header .searchbar{position: relative; float:left; margin-top: 30px;margin-left: 25px;}
+.header .searchbar input{border: 1px solid #cfd0d2; width: 178px; height: 38px; line-height:38px; padding: 0 15px; color: #888;font-family: Verdana, 나눔고딕, "Nanum", "Malgun Gothic", sans-serif; }
+.header .searchbar button{background: url(https://cdn.bmf.kr/web/common/ic_search.png) no-repeat center 0; width: 38px; height: 38px; text-indent: -3000px; position: absolute; top: 0; right: 0; border: 0;}
+.header .searchbar button:hover {background-position: center 100%;}
+
+
+/* [2016-02-24] 글로벌 네비게이션 수정
+ul.gnb{}
+ul.gnb > li{float: left; position: relative; text-align: left;}
+ul.gnb > li > a{display: block; padding: 5px 0 0 1px;}
+ul.gnb > li > a > span {
+	display: inline-block; *display:block; *zoom:1; color: #fff; font-size: 16px; font-family: "NanumBold", 맑은고딕, "Malgun Gothic";
+	height: 36px; padding: 11px 25px 0; text-align: center; letter-spacing: 0; cursor: pointer;
+	}
+ul.gnb > li.now > a > span { color: #25d4ce; font-family:'NanumEB';}
+ul.gnb > li:hover > a > span, ul.gnb > li:focus > a > span { background: #fff; color: #2ac1bc; }
+
+ul.gnb > li.g1 {width:119px;}
+ul.gnb > li.g2 {width:151px;}
+ul.gnb > li.g3 {width:138px;}
+ul.gnb > li.g4 {width:126px;}
+ul.gnb > li.g5 {width:160px;}
+ul.gnb > li.g6 {width:136px;}
+ul.gnb > li.g7 {width:150px;}
+
+ul.gnb > li.g6 > a {height: 47px; background: #362d25; margin-right: 1px;}
+ul.gnb > li.g6 > a > span {position: absolute; top:5px; left: 4px; text-align: center; width: 80px;}
+ul.gnb > li.g6:hover > a > span{z-index: 99;}
+
+ul.gnb > li.g7 > a{height: 47px; background: #362d25;}
+ul.gnb > li.g7 > a > span {position: absolute; top:5px; left: 4px; text-align: center; width: 102px; padding: 11px 20px 0;}
+ //End [2016-02-24] 글로벌 네비게이션 수정 */
+
+
+/* [2016-04-28] 글로벌 네비게이션 수정
+ul.gnb{}
+ul.gnb > li{float: left; position: relative; text-align: left;}
+ul.gnb > li > a{display: block; padding: 5px 0 0 1px;}
+ul.gnb > li > a > span {
+	display: inline-block; *display:block; *zoom:1; color: #fff; font-size: 16px; font-family: "NanumBold", 맑은고딕, "Malgun Gothic";
+	height: 36px; padding: 11px 25px 0; text-align: center; letter-spacing: 0; cursor: pointer;
+	}
+ul.gnb > li.now > a > span { color: #25d4ce; font-family:'NanumEB';}
+ul.gnb > li:hover > a > span, ul.gnb > li:focus > a > span { background: #fff; color: #2ac1bc; }
+
+ul.gnb > li.g1 {width:120px;}
+ul.gnb > li.g2 {width:152px;}
+ul.gnb > li.g3 {width:138px;}
+ul.gnb > li.g4 {width:130px;}
+ul.gnb > li.g5 {width:160px;}
+ul.gnb > li.g6 {width:140px;}
+ul.gnb > li.g7 {width:140px;}
+
+ul.gnb > li.g6 > a {height: 47px; background: #362d25; margin-right: 1px;}
+ul.gnb > li.g6 > a > span {position: absolute; top:5px; left: 4px; text-align: center; width: 82px;}
+ul.gnb > li.g6:hover > a > span{z-index: 99;}
+
+ul.gnb > li.g7 > a{height: 47px; background: #362d25;}
+ul.gnb > li.g7 > a > span{padding: 11px 18px 0;}
+ul.gnb > li.g7:hover > a > span, ul.gnb > li.g7:focus > a > span{background: transparent;}
+ul.gnb > li.g7 > a > span > span.ic{display: inline-block; width: 18px; height: 20px; margin-right: 5px; background: url(https://cdn.bmf.kr/web/common/ic_gnb_wtable.png) no-repeat left top;}
+ul.gnb > li.g7:hover > a > span > span.ic, ul.gnb > li.g7:focus > a > span > span.ic{background-position: left bottom;}
+ //End [2016-04-28] 글로벌 네비게이션 수정 */
+
+/* [2016-05-04] 글로벌 네비게이션 수정 - 현대백화점 추가 */
+ul.gnb{}
+ul.gnb > li{float: left; position: relative; text-align: left;}
+ul.gnb > li > a{display: block; padding: 5px 0 0 1px;}
+ul.gnb > li > a > span {
+	display: inline-block; *display:block; *zoom:1; color: #fff; font-size: 16px; font-family: "NanumBold", 맑은고딕, "Malgun Gothic";
+	height: 36px; padding: 11px 25px 0; text-align: center; letter-spacing: 0; cursor: pointer;
+	}
+ul.gnb > li.now > a > span { color: #25d4ce; font-family:'NanumEB';}
+ul.gnb > li:hover > a > span, ul.gnb > li:focus > a > span { background: #fff; color: #2ac1bc; }
+
+ul.gnb > li.g1 {width:119px;}
+ul.gnb > li.g2 {width:151px;}
+ul.gnb > li.g3 {width:138px;}
+ul.gnb > li.g4 {width:126px;}
+ul.gnb > li.g5 {width:165px;}
+ul.gnb > li.g6 {width:138px;  }
+ul.gnb > li.g7 {width:143px;}
+
+ul.gnb > li.g6 > a {height: 47px; background: #362d25;}
+ul.gnb > li.g6 > a > span {position: absolute; top:5px; left: 4px; text-align: center; width: 80px;}
+ul.gnb > li.g6:hover > a > span{z-index: 99;}
+
+ul.gnb > li.g7 > a{height: 47px; background: #4c7766;}
+ul.gnb > li.g7 > a > span {
+	position: absolute; top:5px; left: 4px; padding-top: 3px; text-align: center; color: #fff; width: 85px; text-indent: -3000px; overflow: hidden;
+	background: url(https://cdn.bmf.kr/web/common/gnb_tlt_hyundai.png) no-repeat center center;
+	}
+/* //End [2016-05-204] 글로벌 네비게이션 수정 - 현대백화점 추가 */
+
+
+ul.sub_lst{display: none;/*min-height: 255px; */width: 172px; position: absolute; left: 0; top: 52px; padding: 20px 0 31px; font-family: "Nanum"; background: #fff; border:1px solid rgba(72, 63, 53, .6); border-top:none; z-index: 1000;
+    -moz-background-clip: border;     /* Firefox 3.6 */
+    -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+    background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.ua-ie-7 ul.sub_lst, .ua-ie-8 ul.sub_lst {border:1px solid #483f35;border-top:none;}
+
+ul.sub_lst>li{text-align: left;}
+ul.sub_lst>li .sub_tit {margin-top:14px;padding:17px 0 3px 25px;line-height: 1.4em; font-size: 14px;color: #222;letter-spacing:0;font-family:'NanumEB';border-top:1px solid #e8e8e8;}
+ul.sub_lst>li:first-child .sub_tit {margin-top:0;padding-top:7px;border-top: none;}
+ul.sub_lst a{display: block; color: #555; font-size: 14px; line-height: 1.4em; padding: 6px 0 3px 25px;letter-spacing:0;}
+ul.sub_lst a:hover, ul.cate_sub a:focus{color: #2ac1bc; font-family: "NanumBold"}
+ul.sub_lst a:hover span, ul.cate_sub a:focus span {padding-bottom:1px;border-bottom:1px solid #2ac1bc;}
+
+ul.gnb > li.g6 ul.sub_lst {left:3px;}
+ul.gnb > li.g7 ul.sub_lst {left:auto;right:3px;}
+ul.gnb > li.g7 ul.sub_lst a {right: 0px; padding: 6px 20px 3px 0; text-align:right;}
+
+/* [2016-05-04] footer - 개인정보취급방침 강조 스타일 수정 */
+.fnb_wrap{border-top: 1px solid #e9e9e9; text-align: left; }
+ul.fnb{overflow:hidden;padding:35px 0 22px;}
+ul.fnb li {float: left; margin-left: 9px; border-right: 1px solid #d1d1d1; letter-spacing: 0;}
+ul.fnb li a {display: block; padding-right: 10px; font-family: "NanumBold", sans-serif; font-size: 13px; color: #666; text-decoration: none; line-height: 0.95; letter-spacing: 0;}
+ul.fnb li a:hover, ul.fnb li a:focus{color: #333; text-decoration: underline;}
+
+ul.fnb li:first-child { margin-left: 0;}
+ul.fnb li.last { border-right: none;}
+ul.fnb li.strong a{color: #000;}
+/* //End [2016-05-04] footer - 개인정보취급방침 강조 스타일 수정 */
+
+.fnb_info_wrap{background: #fff;}
+.fnb_info_wrap .content{ }
+ul.fnb_info_lst{ width: 820px; font-size: 12px; color: #888; font-family:'Nanum'; }
+ul.fnb_info_lst li{
+	display: inline-block; zoom:1; *display:inline;
+	margin:0 3px 6px 0; padding-right: 9px; letter-spacing: -0.01em; line-height: 1.084em;
+	background: url(https://cdn.bmf.kr/web/common/footer_bar.gif) no-repeat 100% 50%;
+	}
+ul.fnb_info_lst li.last{ border-right: none; background: none;}
+ul.fnb_info_lst li a{text-decoration: underline; color: #c3c3c3; font-size: 12px; letter-spacing: -0.04em;  }
+ul.fnb_info_lst li a span {color: #888;}
+ul.fnb_info_lst li a:hover, ul.fnb_info_lst li a:focus{color: #333;}
+
+.sns_box{ float: right; position: absolute; top: 31px; right: 50%; margin-right: -490px; }
+.sns_box a{display: inline-block; zoom:1; *display:inline;  float: left; width: 50px; height: 50px; margin: 0 0 0 10px; font-size: 11px; color: #fff; text-indent: -3000px;}
+.sns_box a.link_blog { background: url(https://cdn.bmf.kr/web/common/sns_blog.png) no-repeat center center; }
+.sns_box a.link_facebook {background: url(https://cdn.bmf.kr/web/common/sns_facebook.png) no-repeat center center; }
+
+#footer .copyright {margin: 10px 0 50px 0; font-size: 12px; font-family:'Nanum'; color: #888; letter-spacing: -0.02em;}
+
+
+/* page up & down button */
+#scroller { position: fixed; bottom: 70px; left: 50%; width: 980px; margin-left: -490px;}
+#scroller ul.page_up_down_lst {/*display: none; */width: 50px; position: absolute; bottom: 0; right: -86px;  text-align: left;}
+#scroller ul.page_up_down_lst li{/*margin-bottom: 5px;*/}
+#scroller ul.page_up_down_lst li a{display: block; width: 50px; height: 50px; overflow: hidden; text-indent: -3000px; background: url(https://cdn.bmf.kr/web/common/btn_page_up_down_new.png) no-repeat;}
+#scroller ul.page_up_down_lst li.page_up a{background-position: 0 top;}
+#scroller ul.page_up_down_lst li.page_up a:hover, #scroller ul.page_up_down_lst li.page_up a:focus{background-position: -50px top;}
+#scroller ul.page_up_down_lst li.page_down a{background-position: 0 -50px;}
+#scroller ul.page_up_down_lst li.page_down a:hover, #scroller ul.page_up_down_lst li.page_down a:focus{background-position: -50px -50px;}
+
+/* page_all_popup_notice */
+.page_all_popup{position: absolute; top: 100px; left: 50%; margin-left: -370px; width: 740px; height: 820px; z-index:200000; display: none;}
+
+
+/* 서비스 점검/업데이트 페이지 */
+.maintenance {margin:0 auto; padding:150px 0 115px; width:430px; letter-spacing:-0.3px; }
+.maintenance h1 {margin-bottom:42px;text-align:center;}
+.maintenance p {margin-bottom:16px; font-size:14px; line-height:21px; color:#888;}
+.maintenance p strong {color:#333;font-weight:bold;}
+.maintenance .info_time {margin-bottom:15px; padding:20px 22px 22px; font-size:14px; line-height:21px; color:#333; background:#eef1f3;}
+.maintenance .info_time strong {font-weight: bold;}
+.maintenance .info_time .desc {display:block; margin:2px 0 11px; color:#888;}
+
+#maintenance-wrapper #footer {padding-top:34px; border-top: 1px solid #d9d9d9;}
+
+/****** [2016-04-28] 브레드크럼 추가 ******/
+ul.breadcrumb.detail{overflow: hidden; height: 32px; padding-top: 25px; position: absolute; left: 0; top: 0px; z-index: 100;}
+ul.breadcrumb.sub_content{position: absolute; right: 50px; top: 60px; float: right;}
+ul.breadcrumb li{float:left; font-size: 13px;}
+ul.breadcrumb li a{color: #888; padding: 0 0 0 22px; background: url(https://cdn.bmf.kr/web/common/breadcrumb.gif) no-repeat 10px center;}
+ul.breadcrumb li:first-child a{background: none; padding-left: 0px;}
+ul.breadcrumb li:last-child a{color: #333; font-family: NanumBold, sans-serif;}
+/****** //End [2016-04-28] 브레드크럼 추가 ******/

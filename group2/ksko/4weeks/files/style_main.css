@@ -1,0 +1,202 @@
+/* 배민프레시 레이아웃 */
+
+/* main banner */
+.main_slides_wrap{text-align: center; max-width: 1920px; margin: 0 auto;}
+.main_slides_wrap .bx-wrapper {text-align: left;}
+.slides_container{position: relative; height: 420px;}
+
+ul.main_slides_lst{overflow: hidden; height: 420px;}
+ul.main_slides_lst li{float: left; width: 100%; background: no-repeat center top;}
+
+/* slides_navi 사이즈 및 네비게이션 위치 변경 */
+ul.main_slides_lst li a{display: block; width: 980px; height: 420px; margin: 0 auto; overflow: hidden; text-indent: -3000px;}
+
+.slides_container div.slides_navi{width: 100%;}
+.slides_container div.slides_navi a{
+	z-index: 55; display: block; width: 60px; height: 92px; text-indent: -3000px;
+	overflow: hidden; position: absolute; top: 50%; margin-top: -46px;
+	background: url(https://cdn.bmf.kr/web/common/main_slides_navi.png) no-repeat center center;
+}
+.slides_container div.slides_navi a.slides_prev{right: 50%; margin-right: 530px; background-position: left center;}
+.slides_container div.slides_navi a.slides_next{left: 50%; margin-left: 530px; background-position: right center;}
+
+.slides_container ul.slides_pagination {z-index: 55; position: relative; bottom: 30px; width: 100%; height: 0; overflow: visible; }
+.slides_container ul.slides_pagination li {display: inline-block; vertical-align: top; padding: 0 3px; *display: inline; *zoom: 1;}
+.slides_container ul.slides_pagination li a {
+	display: block; width: 10px; height: 0; padding: 10px 0 0 0; overflow: hidden; background: #FFF;
+	-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+	opacity: 0.6; filter:alpha(opacity=60);
+}
+.slides_container ul.slides_pagination li a:hover,
+.slides_container ul.slides_pagination li a.now {opacity: 1.0; filter: alpha(opacity=100);}
+
+
+/* 메인 배너 영역 */
+.main_banner_wrap{width: 960px; padding: 50px 10px 60px; overflow: hidden;}
+.banner_box{position: relative; width: 470px; height: 240px;}
+
+/* 배너 타이틀 스타일 변경  */
+.banner_box.new_product{background: #f7f7f7; float: left;}
+.banner_box.guide{background: #f7f7f7; float: right;}
+.banner_box.new_product > h2.mtlt_h2, .banner_box.guide > h2.mtlt_h2{
+	position: absolute; left: 10px; top: 0px; z-index: -1; font-family:Verdana, "NanumBold", sans-serif; font-size: 16px; color: #fff; text-transform: uppercase;
+	}
+
+.banner_slides_box ul{width: 470px; height: 240px; overflow: hidden;}
+.banner_slides_box ul li{float: left;}
+
+.banner_box div.slides_navi{width: 100%;}
+.banner_box div.slides_navi a{display: block; width: 26px; height: 50px; padding: 5px; text-indent: -3000px; overflow: hidden; position: absolute; top: 50%; margin-top: -35px; background: no-repeat center center;}
+.banner_box div.slides_navi a.slides_prev{left: 8px; background-image: url(https://cdn.bmf.kr/web/common/btn_slides_prev_s.png);}
+.banner_box div.slides_navi a.slides_next{right: 8px; background-image: url(https://cdn.bmf.kr/web/common/btn_slides_next_s.png);}
+
+/* 메인 서브 배너 페이지네이션 스타일 변경 */
+.banner_box ul.slides_pagination {position: absolute; top: 20px; right: 17px;}
+.banner_box ul.slides_pagination li {display: inline-block; float: left; vertical-align: top; padding: 0 3px; *display: inline; *zoom: 1;}
+.banner_box ul.slides_pagination li a {display: block; width: 8px; height: 0; padding: 8px 0 0 0; overflow: hidden; background: #FFF; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); opacity: 0.6; filter:alpha(opacity=60);}
+.banner_box ul.slides_pagination li a:hover,
+.banner_box ul.slides_pagination li a.now {opacity: 1.0; filter: alpha(opacity=100);}
+
+/* BEST - 이럴땐 이런 상품 */
+.best_prds_lst_wrap{background: #eee; }
+.best_prds_lst{height: 680px; }
+
+/* 브랜드관 */
+.brand_prds_lst_wrap{background: #e3d0b1;}
+.brand_prds_lst{padding-bottom: 60px; background: #e3d0b1; }
+
+ /* 탭메뉴 width, padding-top, hover,now 시 회색라인 안보이게 변경 */
+ul.best_tab_lst{height: 48px; margin: -15px 10px 23px; padding: 0px; font-size:0;line-height: 0;}
+ul.best_tab_lst li{display: inline-block; zoom:1; *display:inline;  float: left; height: 48px; }
+ul.best_tab_lst li a{display: block; width: 159px; height: 33px; padding-top: 17px; text-align: center; background: #fff;  margin-right: 1px; font-family: "NanumBold"; font-size: 15px; line-height: 1.2; color:#777; }
+ul.best_tab_lst li:first-child a{width: 160px; }
+ul.best_tab_lst li a.last {margin-right: 0;}
+ul.best_tab_lst li a:hover, ul.best_tab_lst li a:focus, ul.best_tab_lst li a.now{margin-right: 0; margin-left: -1px; padding-left: 1px; padding-right: 1px;background: #1fcbc7; font-family: "NanumBold", sans-serif; font-size: 15px; color: #fff;}
+ul.best_tab_lst li:first-child a:hover, ul.best_tab_lst li:first-child a:focus, ul.best_tab_lst li:first-child a.now {margin-left: 0; padding-left: 0;}
+ul.best_tab_lst li a.last:hover, ul.best_tab_lst li a.last:focus, ul.best_tab_lst li a.last.now {padding-right: 0;}
+
+
+/* 카테고리 타이틀 스타일 margin 수정 */
+.mtlt{margin: 70px 0 37px; text-align: center; position: relative;}
+.best_prds_lst .mtlt{margin: 40px 0 42px;}
+.mtlt h2.mtlt_h2{display: inline-block; zoom:1; *display:inline; font-size: 0; line-height: 0; text-align: center;}
+.mtlt span.category_name{display: block; margin-bottom: 15px; color: #999; font-size: 16px; text-align: center; font-weight: normal;}
+.mtlt h2.mtlt_h2 strong{font-family: NanumEB, sans-serif; }
+.mtlt a{display: inline-block; zoom:1; *display:inline;  margin-left: 7px; padding: 2px 4px 2px; border: 1px solid #c3c3c3; font-size: 12px; color: #c3c3c3; position: relative; top: -12px;}
+.mtlt a:hover, .mtlt a:focus{color: #606060; border: 1px solid #606060;}
+.btn_more {display: block; margin: 38px auto 0; padding:15px 0 17px; width:958px; font-family:"Nanum"; text-align: center; font-size: 15px; color:#333; border: 1px solid #d7d7d7;}
+.btn_more span {padding-right: 14px; letter-spacing:0; background: url(https://cdn.bmf.kr/web/main/btn_arr_more.png) no-repeat 100% 5px;}
+
+/* thumbnail * 3  */
+ul.prds_box_lst.col3{overflow: hidden; padding: 0; width:960px; margin-left:10px; }
+ul.prds_box_lst.col3 li.prd_box{position: relative; overflow: hidden; float: left; width: 304px; height: 429px; margin: 0 24px 10px 0; background: #fff; border-bottom: 1px solid #d7d7d7; }
+ul.prds_box_lst.col3 li.prd_box.last{float: right; margin: 0; }
+ul.prds_box_lst.col3 li.prd_box a{display: block; height: 430px;}
+ul.prds_box_lst.col3 li.prd_box a:hover .thumb_img .delivery_type_lst, ul.prds_box_lst.col3 li.prd_box a:focus .thumb_img .delivery_type_lst{top: 0; left: 0;}
+
+ul.prds_box_lst.col3 li.prd_box .thumb_img{position: relative; overflow: hidden;}
+ul.prds_box_lst.col3 li.prd_box .thumb_img p {height: 300px;}
+ul.prds_box_lst.col3 li.prd_box .thumb_img p img {max-width: 100%;}
+
+ul.prds_box_lst.col3 li.prd_box .thumb_img .delivery_type_lst{top: 306px; left: 0px; height: 304px; }
+
+ul.prds_box_lst.col3 li.prd_box dl{ padding: 18px 20px 15px; height: 90px; text-align: left; }
+ul.prds_box_lst.col3 li.prd_box dd.prd_price{float: right;}
+ul.prds_box_lst.col3 li.prd_box .badge_area{position: absolute; bottom: 127px; left: 0px; width: 100%;  height: 24px; margin: 0 0 10px 10px; font-size: 0;}
+
+/* thumbnail * 4  */
+ul.prds_box_lst.col4{overflow: hidden; padding: 0px;}
+ul.prds_box_lst.col4 li.prd_box{position: relative; overflow: visible; float: left; width: 215px; height: 350px; margin: 0 15px 8px;}
+ul.prds_box_lst.col4 li.prd_box a{display: block; height: 345px;}
+ul.prds_box_lst.col4 li.prd_box a:hover .thumb_img .delivery_type_lst, ul.prds_box_lst.col4 li.prd_box a:focus .thumb_img .delivery_type_lst{top: 0; left: 0;}
+
+ul.prds_box_lst.col4 li.prd_box .thumb_img{position: relative; height: 215px; border-radius: 50%; overflow: hidden;}
+ul.prds_box_lst.col4 li.prd_box .thumb_img p {}
+ul.prds_box_lst.col4 li.prd_box .thumb_img p img {max-width: 100%; }
+
+ul.prds_box_lst.col4 li.prd_box .thumb_img .delivery_type_lst{top: 215px; left: 0px; height: 216px;}
+
+/* 간격 및 가격정보 텍스트 수정 */
+ul.prds_box_lst.col4 li.prd_box dl{padding: 18px 10px 12px 10px;}
+ul.prds_box_lst.col4 li.prd_box dl{text-align: center;}
+ul.prds_box_lst.col4 li.prd_box dd.prd_price{text-align: center;}
+ul.prds_box_lst.col4 li.prd_box .badge_area{position: relative; height: 24px; text-align: center; font-size: 0;}
+
+/* 메인 카테고리 prev, next navi 버튼 추가  */
+div.prds_thumb_slides_wrap{height: 346px; overflow: hidden;}
+.prds_thumb_slides_navi{}
+.prds_thumb_slides_navi a{
+	display: block; width: 28px; height: 52px; text-indent: -3000px; overflow: hidden; position: absolute; top: 257px;
+	background: url(https://cdn.bmf.kr/web/common/btn_prds_thumb_slides_navi.png) no-repeat center center;
+	}
+.prds_thumb_slides_navi a.slides_prev{left: 50%; margin-left: -558px; background-position: left top;}
+.prds_thumb_slides_navi a.slides_next{right: 50%; margin-right: -558px; background-position: right top;}
+.prds_thumb_slides_navi a.slides_prev:hover, .prds_thumb_slides_navi a.slides_prev:focus{background-position: left -52px;}
+.prds_thumb_slides_navi a.slides_next:hover, .prds_thumb_slides_navi a.slides_next:focus{background-position: right -52px;}
+
+div.circle_mask{position: absolute; top: 0; left: 0; background: url(https://cdn.bmf.kr/web/common/circle_mask.png) no-repeat center center; width: 215px; height: 215px;}
+
+/* 가격정보 공통 */
+dl dt.prd_tlt{margin-bottom: 5px; font-size: 16px; font-family: "NanumEB", "Malgun Gothic", sans-serif; letter-spacing: -0.07em; color: #000; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+dl dd.prd_description{font-size: 13px; color: #666; font-family:"Nanum"; width: 100%; margin-bottom: 11px; overflow: hidden; letter-spacing: -0.07em; text-overflow: ellipsis; white-space: nowrap;}
+.best_prds_lst dl dt.prd_tlt {font-size: 17px; margin-bottom: 6px;}
+.best_prds_lst dl dd.prd_description {margin-bottom: 21px;}
+
+dl dd.prd_price{font-family: Montserrat, sans-serif;letter-spacing: 0;}
+dl dd.prd_price span.n_price{text-decoration: line-through; font-size: 14px; color: #888; font-weight: normal; vertical-align: middle;}
+dl dd.prd_price span.n_price span {color: #888;}
+dl dd.prd_price span.s_price{ letter-spacing: -0.04em; margin-left: 9px; font-size: 26px; color: #2ac1bc; font-weight:bold; vertical-align: middle; line-height: 1;}
+dl dd.prd_price span.s_price span.won{font-size: 14px; padding-left: 2px; color: #2ac1bc; font-family: "Nanum", "Malgun Gothic", sans-serif; font-weight:600; position: relative; top: -3px;}
+/* //End [2015-11-18] 가격정보 공통 */
+
+.prds_lst_box{height: 670px; background: #fff;}
+.prds_banner{background: no-repeat center top #fff; height: 140px;}
+.prds_banner p a{display: block; width: 980px; height: 140px; margin: 0 auto; overflow: hidden; text-indent: -3000px;}
+
+/* 메인하단 콘텐츠 추가 */
+.wrap.bottom_wrap{border-top: 3px solid #333; }
+.content.bottom{padding: 48px 0 48px 0; }
+.content.bottom h2{padding-right: 2px; font-size: 16px; color: #333; font-family: "NanumBold", sans-serif; }
+.quick_menu_box{width: 300px; height: 140px; float: left; margin-top: 4px; }
+.quick_menu_box ul.quick_menu_lst{font-family:'Nanum';}
+.quick_menu_box ul.quick_menu_lst li{float: left; width: 149px; text-align: center; margin-bottom: 1px; }
+.quick_menu_box ul.quick_menu_lst li a{overflow: hidden; display: block; font-size: 12px; color:#333; letter-spacing: -0.01em;}
+
+/* [2015-11-30] border class 추가 */
+.quick_menu_box ul.quick_menu_lst li.q1.b1{height:67px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: -2px 0 0 -2px; padding-bottom:3px;}
+.quick_menu_box ul.quick_menu_lst li.q2.b2{height:67px; border-bottom: 1px solid #ccc; margin: -2px 0 0 -2px; padding-bottom:3px;}
+.quick_menu_box ul.quick_menu_lst li.q3.b3{height:60px; border-right: 1px solid #ccc; margin: -3px 0 0 -2px; padding-top: 12px; }
+.quick_menu_box ul.quick_menu_lst li.q4.b4{height:60px; margin: -3px 0 0 -3px; padding-top: 12px;}
+
+.quick_menu_box ul.quick_menu_lst li a span.ic{display: block; width: 50px; height: 50px; margin: 0 auto -8px; background: url(https://cdn.bmf.kr/web/common/ic_quick_menu_new.png) no-repeat; text-align: center; }
+.quick_menu_box ul.quick_menu_lst li.q1 a span.ic{background-position: 1px -7px;}
+.quick_menu_box ul.quick_menu_lst li.q2 a span.ic{background-position: 0px -56px;}
+.quick_menu_box ul.quick_menu_lst li.q3 a span.ic{height:52px;background-position: 0px -103px;}
+.quick_menu_box ul.quick_menu_lst li.q4 a span.ic{height:52px;background-position: 1px -153px;}
+
+.quick_menu_box ul.quick_menu_lst li a:hover, .quick_menu_box ul.quick_menu_lst li a:focus{color: #2ac1bc; text-decoration: underline; }
+.quick_menu_box ul.quick_menu_lst li.q1 a:hover span.ic, .quick_menu_box ul.quick_menu_lst li.q1 a:focus span.ic{background-position: -49px -7px;}
+.quick_menu_box ul.quick_menu_lst li.q2 a:hover span.ic, .quick_menu_box ul.quick_menu_lst li.q2 a:focus span.ic{background-position: -50px -56px;}
+.quick_menu_box ul.quick_menu_lst li.q3 a:hover span.ic, .quick_menu_box ul.quick_menu_lst li.q3 a:focus span.ic{background-position: -50px -103px;}
+.quick_menu_box ul.quick_menu_lst li.q4 a:hover span.ic, .quick_menu_box ul.quick_menu_lst li.q4 a:focus span.ic{background-position: -49px -153px;}
+
+.notice_box{position: relative; width: 404px; height: 140px; float: left; margin-left:53px;}
+.notice_box h2{ margin-left: 15px;}
+.notice_box > a{display: inline-block; zoom:1; *display:inline; float: right; margin-right: 10px; position: relative; top: -21px;}
+.notice_box ul.notice_lst{ margin-top: 11px; font-family:'Nanum';}
+.notice_box ul.notice_lst li{line-height: 30px;}
+.notice_box ul.notice_lst li a{display: block; background: url(https://cdn.bmf.kr/web/common/bul_square.png) no-repeat left 10px; padding-left: 14px; font-size: 13px; overflow: hidden; text-overflow:ellipsis; white-space:nowrap; color: #333; }
+.notice_box ul.notice_lst li a:hover, .notice_box ul.notice_lst li a:focus{text-decoration: underline; color: #2ac1bc; background-position: left -22px;}
+
+.notice_box a.btn_more{display: inline-block; zoom:1; *display:inline;  position: absolute; left: 95px; top: 16px;}
+
+.cs_center_box{width: 220px; height: 140px; float: right; text-align: right; }
+.cs_center_box p.cs_tel_num{font-size: 35px; letter-spacing: -0.015em; color: #333; line-height: 1.0em; font-family: "Montserrat"; font-weight:900; margin: 4px 0 9px 0; }
+.cs_center_box dl{width: 100%; overflow: hidden; }
+.cs_center_box dl dt{ font-size: 13px; }
+.cs_center_box dl dd{ float: right; width: 155px; font-size: 13px; letter-spacing: -0.01em; color: #333; line-height: 1.4em; margin-bottom: 1px; font-family:'Nanum'; font-weight: bold;}
+.cs_center_box dl dd.first{margin-bottom: 2px;}
+.cs_center_box dl dd strong{padding-right:5px;color: #333; font-family: NanumBold, sans-serif;}
+.cs_center_box dl dd span{display: inline-block; zoom:1; *display:inline;  color: #999; font-size: 13px; line-height: 1.23em; letter-spacing: 0; margin-top: 3px; font-weight: normal;}
+.cs_center_box dl dd span.last{margin-top: 5px; }
