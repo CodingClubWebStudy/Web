@@ -1,0 +1,117 @@
+body {
+	font-family: 'Trebuchet MS',sans-serif;
+}
+
+/* header */
+#header {
+	width: 100%;
+    height:700px;
+	margin: 0 auto;
+	background: url(../img/header_bg2.jpg) no-repeat 0 50%;
+    background-size:cover;
+    margin-bottom:50px;
+}
+#header .navbar-brand {
+    font-family: 'Trebuchet MS',sans-serif;
+    font-size:32px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing:1.5px;
+    padding-left: 150px;
+}
+#header .navbar-brand span{
+    padding:8px;
+    background: #4f4f4f;
+    color: #fff;
+    margin-right:5px;
+}
+.navbar{
+    background: rgba(225,225,225,0.5);
+}
+.nav li {
+    
+    font-size:18px;
+    font-weight: bold;
+    padding:0 10px; 
+}
+.nav li a {
+	display: block;
+    text-decoration: none;
+    color: #4f4f4f;
+}
+.nav li a:hover{
+    color: #fff;
+}
+
+/* //header */
+
+/*contents */
+#contents,#gallery,#contact{
+	margin-bottom:50px;
+}
+.padding {
+	padding: 25px 25px 0 25px;
+}
+
+#contents h2,#gallery h2,#contact h2{
+    font-family: 'Trebuchet MS',sans-serif;
+    margin-bottom:10px;
+    text-align:center;
+}
+#contents .tle,#gallery .tle,#contact .tle{
+    display: inline-block;
+    border-top:3px solid #5D7C6D;
+    padding-top:5px;
+    font-size:32px;
+}
+#contents p{
+    text-align: justify;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+#gallery .pics,#contact .map{
+    padding-top:25px;
+}
+#gallery .gallery_list .thumbnail img{
+    width:100%;
+    height: 200px;
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+    filter: url(grayscale.svg); /* Firefox 4+ */
+    filter: gray; /*IE 6-9 */
+    
+}
+#gallery .gallery_list .thumbnail:hover img{
+   -webkit-filter: grayscale(0) contrast(80%);
+  -moz-filter: grayscale(0) contrast(80%);
+  -ms-filter: grayscale(0) contrast(80%);
+  -o-filter: grayscale(0) contrast(80%);
+  filter: grayscale(0) contrast(80%);
+ 
+}
+/* footer */
+#footer {
+	padding: 25px 0 30px;
+	border-top: 1px solid #ccc;
+	color: #888;
+	font-size: 0.9em;
+	text-align: center;
+	line-height: 1.8;
+}
+
+#footer .copy {
+    margi-left:10px;
+    font-size:12px;
+}
+/* //footer */
+
+@media only screen and (max-width: 720px) {
+   #header {
+    height:500px;
+    background: url(../img/header_bg2.jpg) no-repeat 50% 50%;
+   }
+    #header .navbar-brand {
+        padding-left:0px;
+    }
+}
