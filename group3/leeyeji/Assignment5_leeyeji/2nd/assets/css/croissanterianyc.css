@@ -1,0 +1,587 @@
+@charset "utf-8";
+
+/* reset */
+
+body {
+	font:normal 12px Arial, sans-serif;
+	line-height:1.5;
+	color:#666666;
+	background-color:#fff2e2;
+	margin:0;
+	padding:0;
+	min-width: 1250px;
+}
+
+h1, h2, h3, h4, h5, h6 {font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+	color: #76411d;
+}
+ul, ol {list-style:none;}
+img {border:0;}
+a {text-decoration:none; color:#666;}
+
+h2{
+	font-size: 4.5em;
+	font-weight: normal;
+	width: 1106px;
+	height: 130px;
+	background: url("../img/logo_orange.png") no-repeat center center;
+	text-align: center;
+	line-height: 130px;
+	margin: 0 auto;
+}
+
+h3{
+	margin-bottom: 30px;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+p{
+	font-size: 1.5em;
+	line-height: 1.8em;
+	letter-spacing: 0.7px;
+}
+
+/* layout */
+
+.clearfix:after{
+	clear: both;
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+
+/* header */
+
+.header{
+	width: 100%;
+	background-color: #3c1111;
+}
+
+.header ul{
+	width: 693px;
+	height: 65px;
+	margin: 0 auto;
+	padding-left: 80px;
+}
+
+.header ul a{
+	color: white;
+	font-size: 1.15em;
+	margin-right: 40px;
+	height: 65px;
+	line-height: 65px;
+}
+
+.header ul a li{
+	color: white;
+}
+
+.header ul a:last-child{
+	margin-right: 0px;
+}
+
+.header ul h1 img{
+	width: 55px;
+	vertical-align: middle;
+}
+
+.header ul > *{
+	float: left;
+}
+
+
+/* home */
+
+.home{
+	width: 100%;
+	height: 743px;
+	border-bottom: 8px solid #eaa923;
+	overflow: hidden;
+}
+
+.home > img{
+	width: 100%;
+	height: auto;
+}
+
+.home > div{
+	width: 100%;
+	position: absolute;
+	top: 16%;
+	color: white;
+	min-width: 1250px;
+}
+
+.home > div > img{
+	width: 200px;
+	display: block;
+	margin: 0px auto 20px;
+}
+
+.home > div > span{
+	font-size: 4.5em;
+	display: block;
+	text-align: center;
+}
+
+.home > div > p{
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.home > div ul{
+	width: 405px;
+	margin: 0px auto 94px;
+}
+
+.home > div ul a li img{
+	width: 55px;
+}
+
+.home > div ul a li{
+	float: left;
+	margin-right: 15px;
+}
+
+.home > div ul .vimeo{
+	margin-right: 0px;
+}
+
+.home div .scroll{
+	width: 100px;
+	height: 100px;
+	background: url("../img/scroll_diamond.png") no-repeat center center;
+	margin: 0 auto;
+}
+
+.home div .scroll p{
+	color: white;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+
+/* about */
+
+.about{
+	width: 1106px;
+	margin: 0 auto 100px;
+}
+
+.about h2{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.about > p{
+	margin-bottom: 50px;
+}
+
+.about ul li img{
+	width: 551px;
+}
+
+.about ul li .macaron1{
+	float: left;
+	margin-right: 3px;
+}
+
+.about ul li .macaron2{
+	float: right;
+}
+
+.about ul li .macaron3{
+	width: 1106px;
+	margin-top: 4px;
+	margin-bottom: 50px;
+}
+
+.hours, .follow, .deliver{
+	float: left;
+}
+
+.hours{
+	margin-left: 100px;
+}
+
+.deliver{
+	margin-left: 200px;
+}
+
+.follow{
+	margin-top: 33px;
+	margin-left: 200px;
+}
+
+.hours ul li{
+	font-size: 1.3em;
+	line-height: 2.4em;
+}
+
+.follow ul{
+	width: 405px;
+}
+
+.follow ul a li img{
+	width: 55px;
+}
+
+.follow ul a li{
+	height: 55px;
+	float: left;
+	margin-right: 15px;
+}
+
+.follow ul .vimeo{
+	margin-right: 0px;
+}
+
+/* menus */
+
+.menus .bg{
+	width: 100%;
+	height: 743px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.menus .bg > img{
+	width: 100%;
+	height: auto;
+}
+
+.menus .title{
+	width: 100%;
+	position: absolute;
+	top: 237.35%;
+	color: white;
+	min-width: 1250px;
+}
+
+.menus .title > img{
+	width: 100px;
+	display: block;
+	margin: 0 auto 260px;
+}
+
+.menus .title > h2{
+	background: none;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.contents{
+	width: 1106px;
+	margin: 0 auto 100px;
+}
+
+.contents h3{
+	font-size: 3.5em;
+}
+
+.contents ul li{
+	font-size: 1.5em;
+	line-height: 1.8em;
+	letter-spacing: 0.7px;
+	margin-bottom: 10px;
+}
+
+.contents ul li span{
+	font-weight: bold;
+}
+
+.classic, .left{
+	float: left;
+}
+
+.mini, .right{
+	width: 540px;
+	float: right;
+}
+
+.sandwiches{
+	padding-top: 40px;
+	clear: both;
+}
+
+.sandwiches ul li{
+	font-size: 1.5em;
+	line-height: 1.8em;
+	letter-spacing: 0.7px;
+	margin-bottom: 25px;
+}
+
+.sandwiches ul li:last-child{
+	margin-bottom: 0px;
+}
+
+.sandwiches > h3{
+	text-align: center;
+}
+
+
+/* catering */
+
+.catering{
+	border-top: 8px solid #eaa923;
+}
+
+.catering .bg{
+	width: 100%;
+	height: 743px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.catering .bg > img{
+	width: 100%;
+	height: auto;
+}
+
+.catering .title{
+	width: 100%;
+	position: absolute;
+	top: 439.95%;
+	color: white;
+	min-width: 1250px;
+}
+
+.catering .title > img{
+	width: 100px;
+	display: block;
+	margin: 0 auto 240px;
+}
+
+.catering .title > h2{
+	background: none;
+	color: white;
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 110px;
+}
+
+.catering .title ul{
+	width: 686px;
+	margin: 0px auto;
+}
+
+.catering .title ul li{
+	border: 2px solid #ecd6a3;
+	color: white;
+	font-size: 1.7em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	width: 320px;
+	float: left;
+	padding: 12px 0px;
+	text-align: center;
+}
+
+.catering .title ul li:first-child{
+	margin-right: 36px;
+}
+
+.catering .contents{
+	width: 1106px;
+}
+
+.catering .contents h2{
+	margin-bottom: 50px;
+}
+
+.catering .contents > p{
+	text-align: center;
+}
+
+.catering .contents p a{
+	color: #fc7624;
+}
+
+.catering .contents form{
+	margin-top: 50px;
+}
+
+.catering input, select{
+	width: 350px;
+	height: 50px;
+	border: 1px solid #522e1b;
+	background-color: transparent;
+}
+
+.catering .text_box{
+	float: left;
+	margin-right: 18px;
+}
+
+.catering .phone{
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+.catering .text_option{
+	float: left;
+	margin-right: 18px;
+}
+
+.catering .text_option > select{
+	width: 168px;
+	height: 55px;
+	color: #522e1b;
+	font-size: 0.8em;
+}
+
+.catering .time{
+	margin-right: 18px;
+	margin-bottom: 10px;
+}
+
+.catering .guest{
+	margin-right: 0px;
+}
+
+.catering textarea{
+	width: 1092px;
+	height: 120px;
+	border: 1px solid #522e1b;
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+
+.catering .submit{
+	clear: both;
+	width: 1100px;
+	height: 50px;
+	background-color: #fc7624;
+	border: transparent;
+	color: white;
+	font-size: 1.3em;
+	line-height: 47px;
+}
+
+/* gift */
+
+.gift{
+	background-color: #3c1111;
+	padding: 50px 0px;
+}
+
+.gift h2{
+	color: white;
+	margin-top: 50px;
+}
+
+.gift > p{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.gift > div{
+	width: 1106px;
+	margin: 0 auto;
+	margin-top: 85px;
+}
+
+.gift .price{
+	float: left;
+	margin-left: 150px;
+}
+
+.gift > div > .price > span{
+	width: 325px;
+	display: block;
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 4px solid #e4cd97;
+}
+
+.gift > div > .price > p{
+	width: 325px;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 1.5px;
+	text-align: center;
+	padding-top: 20px;
+	border-top: 4px solid #e4cd97;
+}
+
+.gift div .price ul{
+	width: 325px;
+	margin: 25px 0px;
+}
+
+.gift div .price ul li{
+	border: 2px solid white;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	width: 70px;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	float: left;
+	margin-right: 50px;
+}
+
+.gift div .price .third, .gift div .price .last{
+	margin-right: 0px;
+}
+
+.gift .third{
+	margin-bottom: 25px;
+}
+
+.gift div .card{
+	width: 340px;
+	float: right;
+	margin-right: 150px;
+	height: 65px;
+	border-radius: 35px;
+	background: #e8a932 url("../img/logo_card.png") no-repeat center top;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 125px;
+	margin-top: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
