@@ -1,0 +1,146 @@
+/*reset*/
+
+body {
+	font:normal 12px Arial, sans-serif;
+	line-height:1.5;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {list-style:none;}
+img {border:0;}
+a {text-decoration:none; color:#666;}
+table {border-collapse:collapse; width:100%;}
+
+/*header*/
+body {
+	background:url("images/bg.jpg") no-repeat center ;	
+}
+.press_nav {
+	background-color: #1e8cbe;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	
+}
+
+.press_nav h1, a {
+	color: #ffffff;
+}
+
+.press_nav h1 {
+	/* border: 1px solid red; */
+	vertical-align: baseline;
+	background:url("images/logo_wordpress.png") no-repeat 0 center;
+	padding-left: 38px;
+	margin-top: 8px;
+	margin-left: 8px;
+	height: 30px;
+	font-size: 18px;
+	float: left;
+	position: relative;
+	left: 150px;
+}
+
+.press_nav h1 > span {
+	color: #a5d1da;
+}
+.login_button {
+	float: right;
+	padding: 13px 20px;
+	background-color: #0073a5;
+	font-size: 13px;
+	position: relative;
+	right: 150px;
+}
+
+.login_button:hover {
+	background-color: #1aaadc;
+}
+
+/* article_index */
+
+.article_index {
+	margin: 0 auto;
+}
+.article_index_info {
+	margin-top: 200px;
+	text-align: center;
+	color: #fff;
+}
+.article_index_info h2 {
+	font-size: 38px;
+	margin-bottom: 20px;
+}
+.article_index_info p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.article_index_info a {
+	display: inline-block;
+	padding: 12px 25px;
+	font-size: 20px;
+	background-color: #1e8cbe;
+}
+.article_index_info a:hover{
+	background-color: #1aaadc;
+}
+.article_index h3{
+	color: #dfe0e3;
+	font-size: 16px;
+	font-weight: bolder;
+}
+.article_index_float {
+	width: 540px;
+	margin: 0 auto;
+	padding-top: 270px;
+}
+.article_index_left p, .article_index_right p {
+	color: #f4f4ee;
+	font-size: 14px;
+}
+.article_index_left, .article_index_right {
+	padding: 15px 0px ;
+	width: 238px;
+	text-align: center;
+	display: inline-block;
+}
+.article_index_left {
+	float: left;
+}
+.article_index_right {
+	float: right;
+}
+.more {
+	clear: both;
+}
+.article_index_left img, .article_index_right img {
+	margin-bottom: 10px;
+}
+.article_index_left:hover, .article_index_right:hover{
+	background-color: #000;
+    opacity: 0.6;
+}
+.more {
+	text-align: center;
+}
+.more:first-child {
+	padding: 10px 0px;
+	color: #c4c7cb;
+	font-size: 16px;
+}
+.more:hover {
+	color: #dfe0e3;
+}
+
+	
