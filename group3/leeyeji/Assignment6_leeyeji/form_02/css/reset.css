@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* reset */
+
+body {
+	font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	line-height:1.2;
+	color:#666666;
+	background-color:#f5f6f7;
+	margin:0;
+	padding:0;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+a:link, a:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a:hover {
+	color: #666666;
+	text-decoration:none;
+}
+
+
+/* layout */
+
+#wrap{
+	width: 460px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	clear: both;
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+
+
+/* header */
+
+.header{
+	margin: 62px 0px 62px 0px; 
+}
+
+h1{
+	width: 460px;
+	height: 44px;
+	background: url(https://static.nid.naver.com/images/join/pc/logo.gif) no-repeat center 0;
+}
+
+h1 a{
+	display: block;
+	width: 238px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+/* container */
+
+.group{
+	width: 458px;
+	border: 1px solid #dadada;
+	margin-bottom: 10px;
+}
+
+.group > div{
+	width: 458px;
+	height: 49px;
+	background-color: white;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.group > div:last-child{
+	border-bottom: none;
+}
+
+.group > div span{
+	display: block;
+	width: 434px;
+	height: 27px;
+	padding: 11px 11px 11px 13px;
+}
+
+.group > div span input{
+	width: 339px;
+	height: 15px;
+	padding: 6px 0px;
+	font-size: 1.25em;
+	font-weight: bold;
+	border: none;
+}
+
+.group:first-child div:first-child{
+	background: white url(https://static.nid.naver.com/images/join/pc/ico_join3.png) no-repeat 350px -45px;
+}
+
+.group:first-child > div:nth-child(2){
+	background: white url(https://static.nid.naver.com/images/join/pc/ico_join3.png) no-repeat 350px -465.5px;
+}
+
+.group:first-child > div:last-child{
+	background: white url(https://static.nid.naver.com/images/join/pc/ico_join3.png) no-repeat 350px -515px;
+}
+
+.container > span input{
+	width: 460px;
+	height: 61px;
+	background: #1fbc02 url(https://static.nid.naver.com/images/join/pc/btn_join2.gif) no-repeat center 1px;
+	border: none;
+	color: white;
+	margin-top: 46px;
+}
+
+.group .sex{
+	height: 49px;
+	padding: 0px;
+}
+
+.group .sex .gender{
+	width: 212px;
+	height: 31px;
+	padding: 0px;
+	border: 1px solid #dcdcdc;
+	float: left;
+	margin-top: 8px;
+}
+
+.group .sex .gender input{
+	width: 212px;
+	height: 31px;
+}
+
+/*.container .group div .gender{
+	width: 200px;
+	height: 27px;
+	margin: 0px;
+	border: 1px solid black;
+	float: left;
+}*/
+
+.group .birthday span{
+	display: block;
+	width: 458px;
+	height: 49px;
+	padding: 0px;
+}
+
+.group .birthday span label{
+	float: left;
+	display: inline-block;
+	width: 54px;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	color: #666666;
+	border: none;
+	border-right: 1px solid #f0f0f0; 
+	background-color: #f7f7f7;
+}
+
+.group .birthday span input{
+	width: 111px;
+	height: 27px;
+	float: left;
+}
+
+.group .birthday span .input_bday{
+	padding: 11px 0px 11px 14px;
+	background: url(https://static.nid.naver.com/images/join/pc/ico_join3.png) no-repeat right -565px;
+}
+
+.group .birthday span input:last-child{
+	padding: 11px 0px 11px 16px;
+}
+
+.group .birthday span select{
+	width: 111px;
+	height: 27px;
+	margin: 13px 0px 9px 16px;
+	border: 1px transparent;
+	background-color: white;
+	float: left;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.group .phone span{
+	display: block;
+	width: 458px;
+	height: 49px;
+	padding: 0px;
+}
+
+.group .phone span select{
+	width: 111px;
+	height: 27px;
+	margin: 13px 0px 9px 7px;
+	border: 1px transparent;
+	background-color: white;
+	float: left;
+	font-size: 1.25em;
+	font-weight: bold;
+	/*background: url(https://static.nid.naver.com/images/join/pc/ico_join3.png) no-repeat right -570px;*/
+}
+
+.group .phone span input{
+	width: 193px;
+	height: 27px;
+	float: left;
+	padding: 13px 13px 9px 15px;
+}
+
+.group .phone span a{
+	display: block;
+	width: 101px;
+	height: 33px;
+	border: 1px solid #dadada;
+	float: left;
+	line-height: 33px;
+	text-align: center;
+	margin-top: 7px;
+}
+
+.group .confirm span{
+	display: block;
+	width: 458px;
+	height: 49px;
+	padding: 0px;
+}
+
+.group .confirm span input{
+	width: 322px;
+	height: 27px;
+	padding: 11px 3px 11px 15px;
+	float: left;
+}
+
+.group .confirm span a{
+	display: block;
+	width: 101px;
+	height: 33px;
+	border: 1px solid #dadada;
+	float: left;
+	line-height: 33px;
+	text-align: center;
+	margin-top: 7px;
+	float: left;
+}
+
+
+/* footer */
+
+.footer{
+	margin: 41px 0px 30px 0px;
+}
+
+.footer ul{
+	font-size: 0.8em;
+	color: #333;
+}
+
+.footer ul li{
+	float: left;
+}
+
+.footer ul:first-child{
+	width: 350px;
+	margin: 0 auto;
+	letter-spacing: -0.03em;
+	margin-bottom: 9px;
+}
+
+.footer ul:last-child{
+	width: 288px;
+	margin: 0 auto;
+}
+
+.footer ul:first-child li{
+	padding-left: 7px;
+	padding-right: 5px;
+	background: url(https://static.nid.naver.com/images/join/pc/bu_bar.gif) no-repeat left 0;
+}
+
+.footer ul:first-child li:first-child{
+	background: none;
+}
+
+.footer ul .logo{
+	width: 63px;
+	height: 11px;
+	background: url(https://static.nid.naver.com/images/join/pc/ci_naver.gif) no-repeat 0 0;
+	padding-left: 0px;
+}
+
+.footer ul .logo a{
+	display: block;
+	width: 63px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+.footer ul:last-child li{
+	padding-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
