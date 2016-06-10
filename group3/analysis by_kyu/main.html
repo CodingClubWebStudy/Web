@@ -93,22 +93,33 @@
     text-align: justify;
     margin-bottom:10px;
 } */
-#container .gallery_list{
+#container .gallery_list_wrap{
     max-width: 1120px;	
     width:100%;
+    overflow: hidden
 }
-#container .gallery_list ul {
+.gallery_list {
     margin-left:-1%;
     margin-right: -1%;
     text-align: center;
 }
-#container .gallery_list ul li a img{
-    width:100%;
+
+.gallery_list li {
+	float:left;
+    /*width:25%;*/
+}
+
+/*#container .gallery_list ul li a{
+	display:block;
+}*/
+.gallery_list li a img{
+	width:300px;
     height: 200px;
 	-webkit-filter: whitescale(100%); 
 	filter: grayscale(100%);
 }
-#container .gallery_list ul li a:hover img{
+
+.gallery_list li a:hover img{
     -webkit-filter: grayscale(0) contrast(80%);
     filter: grayscale(0) contrast(100%);
     filter: grayscale(0) contrast(100%);
@@ -180,8 +191,8 @@
 							</div>
 	 	<!--figure-->
 							<figure>
-							<div class ="gallery_list clearfix">
-									<ul>
+							<div class ="gallery_list_wrap clearfix">
+									<ul class="gallery_list">
 											<li><a href="intro.jsp" class="figure" rel="group"><img src="img/introduce.jpg" alt="Introduce"></a></li>
 											<li><a href="ab.jsp" class="figure" rel="group" ><img src="img/about.jpg" alt="About"></a></li>
 											<li><a href="men.jsp"class="figure" rel="group"  ><img src="img/men's.png" alt="Men's"></a></li>
