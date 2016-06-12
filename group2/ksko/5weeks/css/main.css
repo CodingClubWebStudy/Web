@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {margin:0;padding:0; vertical-align:middle;}
+
+@font-face { font-family:'NanumGothic';
+			src:url(../imgs/nanum.eot); 
+			src:local('☺'), url(../imgs/nanum.woff) format("woff") , url(../imgs/nanum.ttf) format("truetype");
+}
+body {
+	margin:0;
+	padding:0;
+	font-family: "Dotum", Arial,serif;
+	font-size: 1em;
+	color: #666;
+	background-color: #FFF;
+	background-image: url(../imgs/body_back.gif);
+	background-repeat: repeat-x;
+	background-position: top; 
+}
+img {border:none;}
+a {text-decoration: none;color: #666;}
+a:hover {color: #F60;text-decoration: none;}
+.clear {clear:both;}
+#outer_wrap {width:1100px;;margin:0 auto;padding:0;} 
+#wrap {width:995px;;margin:0 auto;padding:0; float:left}
+header {
+	margin-top:20px;
+}
+
+/*header*/
+header #logo {
+	margin-left:10px;
+	float:left;
+}
+header #head_link {
+	float:right;
+	margin-right:10px;
+	font-size:0.75em;
+}
+header #head_link ul {
+	list-style:none;	
+}
+header #head_link li {
+	float:left;
+	padding:0 8px;
+	border-right:1px solid #999;
+}
+#head_link .no_line {
+	border-right:none;
+}
+
+/*main*/
+aside {float:left;width:205px;}
+
+nav {
+	margin:25px 0 0 10px;
+	font-size:0.8em;
+	font-family:'NanumGothic', Serif;
+}
+
+nav ul {list-style:none;}
+nav ul li {padding:5px 10px;text-transform: uppercase;}
+nav ul li a {display:block;}
+
+nav ul li h3 {
+	border:1px solid #CCC;
+	border-radius:20px;
+	padding:5px 20px;
+	font-size:14px;
+	text-transform: capitalize;
+	background-color: #e5e5e5;
+	background-position: top;
+}
+
+nav ul li ul {margin:10px 0 0 0;} 
+nav ul li ul li {padding:0 0 0 20px;line-height: 2em;}
+
+article {
+	width:775px;
+	float:right;
+	margin:20px 0 0 15px;
+}
+
+#html5css, #javascript, #php {
+	width:auto;
+	padding-top:7px;
+	font-size:0.75em;
+	
+}
+
+#html5css h3, #javascript h3, #php h3 {
+	border-bottom:1px solid #369;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+	font-family:"NanumGothic", Serif;
+	font-size:1.2em;
+	color:#369;
+	text-transform: uppercase;
+}
+
+#html5css .book {
+	width:188px;
+	text-align:center;
+	float:left;
+	background-image: url(../imgs/vline_grey.gif);
+	background-position: right;
+	border:2px solid #FFF;
+}
+#html5css .book img {
+	margin:5px 0 0 0;
+}
+
+#html5css .book:hover {
+	border:2px solid #F00;
+	background-image:none;
+}
+
+#html5css .book .sort, #html5css .book .title, #html5css .book .writer, #html5css .book .price {
+	padding:2px 0;
+	margin:0;
+}
+
+#html5css .book .sort {
+	margin-top:4px;
+}
+#html5css .book .title {
+	font-weight:bold;
+}
+
+.link {
+	display:block;
+	position:absolute;
+	width: 188px;
+	height:230px;
+	z-index:2;
+}
+
+#javascript .goods, #php .goods {
+	width:170px;
+	margin:5px 29px 5px 0;
+	border: 1px solid #999;
+	padding:15px 0;
+	float:left;
+	text-align:center;
+}
+
+#javascript .goods.goods_right, #php .goods.goods_right {
+	float:right;
+	margin:5px 0 ;
+}
+
+#javascript .goods .js_img, #php .goods .php_img {
+	height:110px;
+}
+
+#javascript .goods .title, #javascript .goods  .price {
+	padding:5px 0;
+	margin:0;
+}
+
+#javascript ##php .title, #php .goods  .price {
+	padding:5px 0;
+	margin:0;
+}
+
+article #ad_main_banner {
+	margin:10px 0;
+	
+}
+
+/* footer */
+footer {
+	background-image: url(../imgs/foo_back.gif);
+	background-repeat: repeat-x;
+	background-position: top;  
+	font-size:0.75em; 
+	margin:10px 0 0 0;	 
+}
+
+footer ul {
+	list-style:none;
+	margin:0 0 0 210px; 
+}
+footer ul li {
+	float:left;
+	font-family:'NanumGothic', Serif;
+	background-image: url(../imgs/foot_line.gif);
+	background-repeat: no-repeat;
+	background-position: right center; 
+}
+
+footer ul li.no_line {
+	background-image:none;
+}
+
+footer ul li a {
+	font-size:1.1em;
+	display:block;
+	padding:5px 15px;
+}
+
+footer img {	
+	margin:10px 0 0 40px;
+	float:left;
+	width:150px;
+}
+
+footer #foot_note {
+	margin:10px 0 0 25px;
+	line-height:1.5em;
+	float:left;
+	width:600px;
+	padding:0 0 20px 0;
+}
+
+
+#sticky {
+	width:82px; 
+	float:right;
+	position: relative;
+	top:115px;
+	padding:10px 5px;
+	font-size:0.75em;
+	background-color: #999;
+	border-radius:10px;	
+}
+
+#sticky ul {
+	list-style:none;
+}
+
+#sticky ul li {
+	background-image: url(../imgs/sticky_line.gif);
+	background-position: bottom;	
+}
+#sticky ul li a {
+	display:block;
+	padding:3px 0;
+	height:27px;
+	color:#FFF;
+}
