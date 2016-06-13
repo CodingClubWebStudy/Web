@@ -1,0 +1,220 @@
+/*reset*/
+
+body {
+	font:normal 12px Arial, sans-serif;
+	line-height:1.5;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {list-style:none;}
+img {border:0;}
+a {text-decoration:none; color:#666;}
+table {border-collapse:collapse; width:100%;}
+
+
+/*style*/
+
+
+body {
+	background-color: #f5f6f7;
+}
+
+header {
+	padding-top: 62px;
+}
+
+h1 > a {
+	display: block;
+	width: 238px;
+	height: 44px;
+	background:url("images/logo.gif") no-repeat;
+	padding-bottom: 62px;
+	margin: 0 auto;
+}
+
+.content {
+	width: 456px;
+	margin: 0 auto;
+}
+
+.row_group {
+	border: 1px solid #dadada;
+	background-color: #fff;
+
+}
+
+.row_group div {
+	height: 46px;
+}
+
+.row_group div+div {
+	border-top: 1px solid #f0f0f0;
+}
+
+.row_group+.row_group {
+	margin-top: 10px;
+}
+
+.group1 input, .group2 input, .group3 input{
+	border: none;
+ 	font-size: 15px;
+ 	font-weight: bold;
+ 	color: #4a4a4a;
+}
+
+.group1 input {
+	width: 339px;
+ 	height: 17px;
+ }
+
+.group1 span {
+	display: inline-block;
+	margin: 11px 11px 11px 13px;
+}
+
+.bg1 {
+	background:url("images/ico_1.png") no-repeat 350px 17px;
+}
+
+.bg2 {
+	background:url("images/ico_2.png") no-repeat 350px 15px;
+}
+
+.bg3 {
+	background:url("images/ico_3.png") no-repeat 350px 15px;
+}
+
+.group2:first-child input, .group2:last-child input {
+	margin: 11px 11px 11px 13px;
+	width: 421px;
+	height: 17px;
+}
+
+.birth {
+	display: inline-block;
+	line-height: 48px;
+	width: 54px;
+	height: 46px;
+	border-right: 1px solid #f0f0f0;
+	background-color: #f5f6f7;
+	font-size: 13px;
+	text-align: center;
+	color: #9e9eaf;
+	position: relative;
+	vertical-align: middle; 
+	margin-right: 10px;
+}
+
+.year {
+	width: 116px;
+	display: inline-block;
+	background:url("images/ico_4.png") no-repeat right 0 ;
+}
+
+.year input, .date input {
+	width: 110px;
+	height: 15px;
+}
+
+.month {
+	border:0 none;
+	width: 104px;
+	height: 25px;
+	margin: 0 14px;
+	font-size: 15px;
+	line-height: 1;
+ 	color: #4a4a4a;
+
+}
+
+.local {
+	display: inline-block;
+	width: 106px;
+	height: 17px;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	vertical-align: middle;
+	padding-left: 13px;
+	background:url("images/ico_4.png") no-repeat right 0 ;
+}
+
+.group3 a {
+	display: inline-block;
+	border: 1px solid #f0f0f0;
+	width: 99px;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+}
+
+.phone_num input {
+	width: 193px;
+	height: 15px;
+	margin: 12px 10px 11px 13px;
+}
+
+.confirm input {
+	width: 322px;
+	height: 15px;
+	margin: 12px 4px 11px 13px;
+}
+
+.submit {
+	border:0 none;
+	width: 456px;
+	height: 59px;
+	background: #1fbc02 url("images/btn_join2.gif") no-repeat center 0 ;
+	border: 1px solid #1eb702;
+	margin-top: 52px;
+	margin-bottom: 41px;
+}
+
+footer ul {
+	overflow: hidden;
+	width: 365px;
+	margin: 0 auto;
+}
+
+footer a, address, address a {
+	color: #333;
+}
+
+footer li {
+	float: left;
+}
+
+footer li+li {
+	padding: 0 5px;
+	background:url("images/ico_5.png") no-repeat left center ;
+}
+
+footer li:first-child { 
+	padding-right: 5px;
+}
+
+address {
+	text-align: center;
+}
+
+.a_logo a {
+	width: 63px;
+	height: 11px;
+	background:url("images/ci_naver.gif") no-repeat;
+	vertical-align: middle;
+}
+
+address:last-child em {
+	font-size: 8px;
+	font-style: normal;
+}
