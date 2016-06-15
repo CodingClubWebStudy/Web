@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* reset */
+
+body {
+	font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	line-height:1.2;
+	color:#666666;
+	background-color: transparent;
+	margin:0;
+	padding:0;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+a:link, a:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a:hover {
+	color: #666666;
+	text-decoration:none;
+}
+
+
+/* layout */
+
+.clearfix:after{
+	clear: both;
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+
+
+/* header */
+
+.header{
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.inner_header{
+	width: 980px;
+	height: 65px;
+	margin: 0 auto;
+}
+
+h1{
+	width: 160px;
+	height: 33px;
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat 0px -566px;
+	margin-top: 15px;
+	float: left;
+}
+
+form{
+	width: 413px;
+	margin: 18px 0 0 49px;
+	float: left;
+}
+
+form .search_box input{
+	width: 367px;
+	height: 28px;
+	border: none;
+	background: transparent;
+	float: right;
+	color: #9b9b9b;
+	font-size: 17px;
+}
+
+form .search_box button{
+	width: 29px;
+	height: 30px;
+	border: none;
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_dk_151109.png) no-repeat -26px -1px;
+	float: left;
+	cursor: pointer;
+}
+
+.nav{
+	float: right;
+}
+
+.nav li{
+	width: 46px;
+	height: 65px;
+	margin-left: 17px;
+	float: left;
+}
+
+.nav li a{
+	width: 46px;
+	height: 45px;
+	display: block;
+}
+
+.nav li a span{
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin: 20px auto 0;
+}
+
+.nav li:first-child span{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat 0 -173px;
+}
+
+.nav li:nth-child(2) span{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -33px -173px;
+}
+
+.nav li:nth-child(3) span{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -66px -173px;
+}
+
+.nav li:last-child span{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -99px -173px;
+}
+
+.nav li:first-child span:hover{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat 0 -2px;
+}
+
+.nav li:nth-child(2) span:hover{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -33px -2px;
+}
+
+.nav li:nth-child(3) span:hover{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -66px -2px;
+}
+
+.nav li:last-child span:hover{
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -99px -2px;
+}
+
+
+/* content */
+
+.main_frame{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.main_img{
+	width: 100%;
+	min-width: 1020px;
+	position: relative;
+	top: -60px;
+	-webkit-filter: brightness(75%);
+}
+
+.tab_menu{
+	width: 100%;
+	height: 54px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.tab_menu ul{
+	border: 1px solid red;
+}
+
+.tab_menu ul li{
+	float: left;
+}
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
