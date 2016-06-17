@@ -3,12 +3,13 @@
 /* reset */
 
 body {
-	font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif;
+	font-family: AppleSDGothicNeo-Regular,NanumGothic,나눔고딕,sans-serif;
 	line-height:1.2;
 	color:#666666;
 	background-color: transparent;
 	margin:0;
 	padding:0;
+	letter-spacing: -0.025em;
 }
 br	{
 	letter-spacing: 0;
@@ -37,6 +38,10 @@ a:hover {
 
 
 /* layout */
+
+#wrap{
+	min-width: 1024px;
+}
 
 .clearfix:after{
 	clear: both;
@@ -70,8 +75,8 @@ h1{
 }
 
 form{
-	width: 413px;
-	margin: 18px 0 0 49px;
+	width: 414px;
+	margin: 18px 0 0 48px;
 	float: left;
 }
 
@@ -160,31 +165,230 @@ form .search_box button{
 }
 
 .main_img{
+	display: block;
 	width: 100%;
-	min-width: 1020px;
-	position: relative;
-	top: -60px;
-	-webkit-filter: brightness(75%);
+	height: 100%;
+	background: url("http://t1.daumcdn.net/thumb/R1280x0/?fname=http://u1.daumcdn.net/cod/c75c80802502481c81ab86b245774369") no-repeat 50% 25%;
+	/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale');*/
+	-webkit-filter: brightness(70%);
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .tab_menu{
 	width: 100%;
 	height: 54px;
 	border-bottom: 1px solid #e7e7e7;
+	text-align: center;
 }
 
 .tab_menu ul{
-	border: 1px solid red;
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
 }
 
 .tab_menu ul li{
+	width: 111px;
+	height: 54px;
+	float: left;
+	text-align: center;
+	line-height: 55px;
+}
+
+.tab_menu ul li a{
+	display: block;
+	width: 111px;
+	height: 55px;
+}
+
+#episode{
+	border-bottom: 1px solid black;
+}
+
+/*.tab_menu ul li a:link{
+	border-bottom: none;
+}
+
+.tab_menu ul li a:visited{
+	border-bottom: 1px solid black;
+}
+
+.tab_menu ul li a:hover{
+	border-bottom: 1px solid black;
+}
+
+.tab_menu ul li a:active{
+	border-bottom: 1px solid black;
+}*/
+
+.tab_menu ul li a span{
+	font-size: 18px;
+	letter-spacing: -0.425px;
+}
+.episode .event{
+	display: block;
+	width: 700px;
+	height: 81px;
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/bnr_support.png) no-repeat 0 0;
+	border: 1px solid #f3f3f3;
+	margin: 0 auto;
+}
+
+.pre_episode{
+	width: 700px;
+	margin: 18px auto 13px;
+}
+
+.pre_episode ul li{
+	margin: 0 auto 9px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.pre_episode ul li a span{
 	float: left;
 }
 
+.pre_episode .order{
+	font-size: 17px;
+	color: #15b7ab;
+	padding: 0 8px;
+	font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,NanumGothic,나눔고딕,sans-serif;
+}
+
+.pre_episode .title{
+	display: block;
+}
+
+.title strong{
+	color: black;
+	font-size: 17px;
+	font-weight: normal;
+	display: block;
+	line-height: 22px;
+}
+
+.title span{
+	float: left;
+	font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,NanumGothic,나눔고딕,sans-serif;
+	font-size: 16px;
+	color: #aaa;
+	font-weight: normal;
+	margin-top: 4px;
+	/*letter-spacing: normal;*/
+}
+
+.title span span:nth-child(2), .title span span:nth-child(4), .title span span:nth-child(6){
+	margin-right: 10px;
+	line-height: 12px;
+}
+
+.title span span:first-child{
+	width: 19px;
+	height: 17px;
+	background: url(https://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -165px -160px;
+	margin: 3px 3px 0 0;
+}
+
+.title span span:nth-child(3){
+	width: 19px;
+	height: 17px;
+	background: url(https://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -204px -160px;
+	margin: 3px 3px 0 0;
+}
+
+.title span span:nth-child(5){
+	width: 18px;
+	height: 17px;
+	background: url(https://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -186px -160px;
+	margin: 3px 3px 0 0;
+}
+
+.title span span:nth-child(7){
+	width: 1px;
+	height: 12px;
+	background-color: #d7d7d7;
+	margin: 5px 10px 0 0;
+}
+
+.title span span:last-child{
+	font-size: 13.6px;
+	line-height: 13px;
+}
+
+.pre_episode .img{
+	display: block;
+	width: 140px;
+	height: 106px;
+	float: right;
+	margin-top: 2px;
+}
+
+.pre_episode li:first-child .img{
+	background: url(http://t1.daumcdn.net/thumb/S140x106/?fname=http://u1.daumcdn.net/news/201606/10/storyfunding/20160610150410194uyej.jpg) no-repeat 0 0; 
+}
+
+.pre_episode li:nth-child(2) .img{
+	background: url(http://t1.daumcdn.net/thumb/S140x106/?fname=http://u1.daumcdn.net/news/201606/06/storyfunding/20160606190428092asgk.jpg) no-repeat 0 0; 
+}
+
+.pre_episode li:last-child .img{
+	background: url(http://t1.daumcdn.net/thumb/S140x106/?fname=http://u1.daumcdn.net/news/201605/30/storyfunding/20160530120239446icfr.jpg) no-repeat 0 0; 
+}
+
+.pre_episode li:last-child{
+	border: none;
+}
+
+
 /* footer */
 
+.inner_footer{
+	width: 980px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid red;
+}
 
+.inner_footer span{
+	border: 1px solid blue;
+}
 
+.inner_footer span a{
+	font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,NanumGothic,나눔고딕,'Malgun Gothic','맑은 고딕',sans-serif;
+	font-size: 13px;
+	letter-spacing: 0;
+	color: #aaa;
+	float: left;
+}
+
+.inner_footer span span{
+	display: inline-block;
+	width: 1px;
+	height: 13px;
+	margin: 0 13px;
+	float: left;
+	background-color: #dfdfdf;
+}
+
+.inner_footer a{
+	display: inline-block;
+	float: right;
+	border: 1px solid blue;
+}
+
+.inner_footer a span{
+	display: inline-block;
+	width: 10px;
+	height: 12px;
+	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -100px -42px;
+}
+
+.inner_footer a strong{
+	font-size: 13px;
+	letter-spacing: -1px;
+}
 
 
 
