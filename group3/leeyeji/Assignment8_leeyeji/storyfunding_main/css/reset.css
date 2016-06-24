@@ -3,7 +3,7 @@
 /* reset */
 
 body {
-	font-family: AppleSDGothicNeo-Regular,NanumGothic,나눔고딕,sans-serif;
+	font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,NanumGothic,나눔고딕,'Malgun Gothic','맑은 고딕',sans-serif;
 	line-height:1.2;
 	color:#666666;
 	background-color: #ebefee;
@@ -11,7 +11,7 @@ body {
 	padding:0;
 	letter-spacing: -0.025em;
 }
-br	{
+br {
 	letter-spacing: 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +41,7 @@ a:hover {
 
 #wrap{
 	min-width: 1024px;
+	overflow: hidden;
 }
 
 .clearfix:after{
@@ -59,6 +60,8 @@ a:hover {
 /* header */
 
 .header{
+	position: fixed;
+	z-index: 1000;
 	width: 100%;
 	height: 65px;
 	border-bottom: 1px solid #d0d0d0;
@@ -128,6 +131,14 @@ form .search_box button{
 	margin: 20px auto 0;
 }
 
+.nav li a .txt{
+	display: block;
+	text-align: center;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -999px;
+}
+
 .nav li:first-child span{
 	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat 0 -173px;
 }
@@ -167,13 +178,15 @@ form .search_box button{
 	width: 100%;
 	height: 500px;
 	overflow: hidden;
+	position: relative;
+	margin-top: 66px;
 }
 
 .main_img{
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: url("http://u1.daumcdn.net/cod/74d72b8533dd47f08424fddbd7420762") no-repeat 50% 25%;
+	background: url("http://u1.daumcdn.net/cod/ca884b3221da45b6b547aa5a48d1e036") no-repeat 50% 25%;
 	/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale');*/
 	-webkit-filter: brightness(80%);
 	-webkit-background-size: cover;
@@ -185,11 +198,68 @@ form .search_box button{
 }
 
 .donate{
+	width: 100%;
 	position: absolute;
-	top: 20%;
+	top: 38%;
 	left: 0;
 	color: white;
 	text-align: center;
+	vertical-align: middle;
+}
+
+.donate p{
+	font-size: 14px;
+}
+
+.donate strong{
+	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: -0.425px;
+	display: inline-block;
+	margin-top: 23px;
+}
+
+.donate .hidden_txt{
+	width: 700px;
+	height: 6px;
+	background-color: #16b7ab;
+	border-radius: 2px;
+	margin: 0 auto;
+	margin-top: 26px;
+}
+
+.donate span{
+	display: inline-block;
+	font-size: 19px;
+	margin-top: 15px;
+}
+
+.donate span > span{
+	font-size: 16px;
+}
+
+.slide_dot{
+	margin-top: 113px;
+}
+
+.slide_dot span{
+	margin-top: 0px;
+}
+
+.slide_dot span a span{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: #fff;
+	opacity: 0.4;
+	margin: 0 7px;
+	text-indent: -9999px;
+}
+
+.slide_dot span a .apply{
+	opacity: 1;
 }
 
 .con_home{
@@ -199,18 +269,20 @@ form .search_box button{
 
 .wrap_home{
 	width: 995px;
+	margin-left: 7px;
 }
 
 
 h3{
 	width: 980px;
-	height: 80px;
+	height: 76px;
 	vertical-align: middle;
 	line-height: 80px;
 	text-align: center;
-	margin: 0 auto;
 	font-size: 17px;
+	font-family: AppleSDGothicNeo-Regular,NanumGothic,나눔고딕,sans-serif;
 	color: black;
+	margin-bottom: 3px;
 }
 
 .editors_pic{
@@ -218,10 +290,13 @@ h3{
 	height: 333px;
 	background-color: white;
 	float: left;
-	margin-right: 13px;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 .editors_pic > a{
+	display: inline-block;
+	height: 333px;
 	border: 1px solid #e6eae9;
 }
 
@@ -237,7 +312,7 @@ h3{
 	height: 182px;
 }
 
-.editors_pic a span em{
+.editors_pic a span .donate_pos{
 	display: block;
 	width: 48px;
 	height: 25px;
@@ -248,18 +323,71 @@ h3{
 	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -106px -313px;
 }
 
+.editors_pic a span em{
+	display: block;
+	width: 48px;
+	height: 25px;
+	text-indent: -9999px;
+}
+
+.editors_pic a div > strong, .editors_pic a div > span{
+	display: block;
+}
+
+.editors_pic a div strong{
+	font-size: 16.05px;
+	font-weight: normal;
+	color: black;
+	padding-top: 17px;
+}
+
+.editors_pic a div span{
+	font-size: 15px;
+	line-height: 22.5px;
+	padding-top: 4px;
+}
+
+.editors_pic a div{
+	padding: 0 20px;
+}
+
+.pic_bar {
+	width: 193.75px;
+	height: 0.3px;
+	background-color: #16b7ab;
+	border-radius: 2px;
+	margin: 0 auto;
+	margin-top: 36.5px;
+	color: transparent;
+}
+
+.editors_pic a div span span{
+	font-size: 13.95px;
+	padding-top: 0;
+}
+
+.editors_pic a div span span:first-child{
+	float: left;
+}
+
+.editors_pic a div span span:last-child{
+	float: right;
+}
+
 
 /* footer */
+
+.footer{
+	width: 100%;
+	height: 71px;
+	background-color: #fefefe;
+	border: 1px solid #eff1f0;
+}
 
 .inner_footer{
 	width: 980px;
 	display: block;
-	margin: 0 auto;
-	border: 1px solid red;
-}
-
-.inner_footer span{
-	border: 1px solid blue;
+	margin: 31px auto 0;
 }
 
 .inner_footer span a{
@@ -274,7 +402,7 @@ h3{
 	display: inline-block;
 	width: 1px;
 	height: 13px;
-	margin: 0 13px;
+	margin: 0 10px;
 	float: left;
 	background-color: #dfdfdf;
 }
@@ -282,21 +410,22 @@ h3{
 .inner_footer a{
 	display: inline-block;
 	float: right;
-	border: 1px solid blue;
 }
 
 .inner_footer a span{
 	display: inline-block;
 	width: 10px;
 	height: 12px;
+	padding-bottom: 1px;
 	background: url(http://m1.daumcdn.net/img-media/storyfunding/pc/img_storyfund_160527.png) no-repeat -100px -42px;
 }
 
 .inner_footer a strong{
 	font-size: 13px;
 	letter-spacing: -1px;
+	font-weight: normal;
+	vertical-align: top;
 }
-
 
 
 
